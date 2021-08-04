@@ -1,0 +1,33 @@
+---
+sidebar: sidebar_aws 
+permalink: aws/task_deleting_cloud_sync_data_broker.html 
+keywords: Cloud Volumes Service for AWS, Cloud Sync, data brokers 
+summary: 您可以删除不再需要的 Cloud Sync 数据代理。 
+---
+= 删除 Cloud Sync 数据代理
+:toc: macro
+:hardbreaks:
+:toc: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
+
+
+[role="lead"]
+您可以删除不再需要的 Cloud Sync 数据代理。
+
+此任务会从云卷中删除数据代理，但不会删除 AWS 中的数据代理实例。
+
+要删除 AWS 中的数据代理实例，您必须转到帐户的 AWS 控制台，按名称找到代理的 EC2 实例，然后根据需要终止该实例。
+
+必须先删除使用数据代理的所有 Cloud Sync 关系，然后才能删除数据代理。
+
+link:task_deleting_cloud_sync_relationship.html["删除 Cloud Sync 关系"]
+
+.步骤
+. 转到卷页面上的同步页面或卷的同步选项卡。
+. 通过单击数据代理的名称并单击垃圾桶图标来删除数据代理。
+. 在确认对话框中，键入 `delete` 进行确认，然后单击 * 删除 * 。
+

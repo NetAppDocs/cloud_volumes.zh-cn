@@ -1,0 +1,61 @@
+---
+sidebar: sidebar_aws 
+permalink: aws/reference_whats_new_cloud_volumes_aws.html 
+keywords: Cloud Volumes Service for AWS, what's new, features, enhancements 
+summary: NetApp 会定期更新适用于 AWS 的 Cloud Volumes Service ，为您提供新功能和增强功能。 
+---
+= Cloud Volumes Service for AWS 中的新增功能
+:toc: macro
+:hardbreaks:
+:toc: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
+
+
+[role="lead"]
+NetApp 会定期更新适用于 AWS 的 Cloud Volumes Service ，为您提供新功能和增强功能。
+
+
+
+== 2021年2月
+
+* 现在可以使用新的 Cloud Volumes API （`PerformanceMetrics` ）来检索性能统计信息，包括 IOPS ，带宽和延迟。要了解更多信息，请参见 link:reference_cloud_volume_apis.html["Cloud Volumes APIs"^]。
+
+
+
+
+== 2020 年 7 月
+
+* 现在， Cloud Volumes Service 支持更宽的 RFC 1918 专用网络范围，范围介于 /16 和 /28 之间。以前仅支持 /28 范围。
+* 现在， " 同步 " 功能可直接与 Cloud Sync UI 集成，以提供增强的功能。
+* 可以通过 API 调用将卷与 NSFv3 ， NFSv4.1 以及 NFSv3 和 NFSv4.1 进行转换。
+* API 示例和示例 Python 脚本已更新为 v2 API 。 link:reference_cloud_volume_apis.html["请参见 Cloud Volumes API"]。
+* 现在，已为 NFSv4.1 卷启用 ACL 。
+* Cloud Volumes Service 现在已通过 SOC 2 1 类认证。
+* Cloud Volumes Service 现已在新加坡推出（亚太地区东南部 1 ）。
+
+
+
+
+== 2020年3月
+
+* 现在，对于 NFSv3 和 NFSv4.1 挂载， Cloud Volumes Service 支持的最大 I/O 大小为 1 MiB 。以前，最大 I/O 大小为 64 KiB 。增加 I/O 大小可能会提高某些工作负载的性能。要增加 I/O 大小，请使用挂载选项 "rsize" 和 / 或 "wsize" ，例如： `mount -o nfsver=4.1 ， rsize=1048576 ， wsize=1048576 172.25.0.4 ： /vol1 /mnt/CV`
+
+
+
+
+== 2020年2月
+
+* Cloud Volumes Service 现在可在 AWS Marketplace 中以计量（按需购买）订阅的形式提供。有关更多详细信息，请参见 Marketplace 列表： https://aws.amazon.com/marketplace/pp/B0848MXK74[]请注意，最初的月度和年度订阅计划仍然可用。
+
+
+
+
+== 2020年1月
+
+* Cloud Volumes Service 现在支持 SMB 多通道，该通道可同时使用多个网络连接来提高性能。默认情况下， Windows 客户端会启用多通道，但要求 EC2 实例使用支持 rss （接收端扩展）的网络适配器。
+* 现在，您可以从 Cloud Volumes Service 用户界面还原快照中的卷。这样，您可以将卷还原到时间点快照，而无需重新挂载客户端。请参见 link:task_reverting_volume_to_snapshot.html["从快照还原卷"] 了解详细信息。
+

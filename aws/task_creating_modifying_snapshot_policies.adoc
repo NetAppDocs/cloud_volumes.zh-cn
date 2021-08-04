@@ -1,0 +1,35 @@
+---
+sidebar: sidebar_aws 
+permalink: aws/task_creating_modifying_snapshot_policies.html 
+keywords: Cloud Volumes Service for AWS, snapshot policies 
+summary: 您可以根据需要为云卷创建或修改快照策略。 
+---
+= 创建或修改快照策略
+:toc: macro
+:hardbreaks:
+:toc: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
+
+
+[role="lead"]
+您可以根据需要为云卷创建或修改快照策略。
+
+.步骤
+. 在卷页面中，单击卷名称，然后选择 * 快照策略 * 。
+. 选择 * 每小时 * ， * 每日 * ， * 每周 * 或 * 每月 * 以指定创建快照的频率。
++
+已配置的策略将标记为绿色圆点。未定义的策略将标记为红点。
+
+. 选择要保留的快照数量。
+. 选择应创建快照的日期，小时和分钟。
+. 如果要创建不同频率的其他快照，例如，每月快照和每日快照，请重复步骤 2 至 4 。
++
+image:diagram_snapshot_policy_modify.png["快照策略"]
+
+. 如果 * 已启用 * 按钮尚未设置为 * 启用 * ，请单击该按钮以启用或重新启用此策略。
+. 单击 * 保存更改 * 。
+

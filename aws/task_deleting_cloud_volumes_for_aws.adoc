@@ -1,0 +1,30 @@
+---
+sidebar: sidebar_aws 
+permalink: aws/task_deleting_cloud_volumes_for_aws.html 
+keywords: Cloud Volumes Service for AWS, delete, unmount 
+summary: 您可以删除不再需要的云卷。 
+---
+= 删除云卷
+:toc: macro
+:hardbreaks:
+:toc: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
+
+
+[role="lead"]
+您可以删除不再需要的云卷。
+
+.步骤
+. 从所有客户端卸载卷：
++
+** 在 Linux 客户端上，使用 `umount` 命令。
+** 在 Windows 客户端上，单击 * 断开网络驱动器 * 。
+
+
+. 在卷页面中，通过选中相应的复选框，单击 * 操作 * ，然后从下拉列表中选择 * 删除卷 * 来指定要删除的卷。
+. 在确认对话框中，键入 `delete` 确认要删除卷，然后单击 * 删除 * 。
+

@@ -1,0 +1,23 @@
+---
+sidebar: sidebar_aws 
+permalink: aws/concept_overview.html 
+keywords: Cloud Volumes Service for AWS, overview, concepts, features, use cases, prerequisites, workflow 
+summary: 云卷易于使用，部署速度快。使用适用于 AWS 的 Cloud Volumes Service 需要满足一些前提条件。 
+---
+= Cloud Volumes Service for AWS 前提条件
+:toc: macro
+:hardbreaks:
+:toc: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
+
+
+[role="lead"]
+云卷易于使用，部署速度快。使用适用于 AWS 的 Cloud Volumes Service 需要满足一些前提条件。
+
+您必须先订阅 Cloud Volumes Service for AWS ，然后才能执行本文档中所述的云卷任务。订阅过程包括使用服务所需的初始设置和配置。
+
+请参见 https://www.netapp.com/us/forms/campaign/register-for-netapp-cloud-volumes-for-aws.aspx?hsCtaTracking=4f67614a-8c97-4c15-bd01-afa38bd31696%7C5e536b53-9371-4ce1-8e38-efda436e592e["抢先了解适用于 AWS 的全新 NetApp Cloud Volumes Service"^] 页面以了解更多信息。

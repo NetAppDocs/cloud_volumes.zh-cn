@@ -1,0 +1,39 @@
+---
+sidebar: sidebar_aws 
+permalink: aws/task_modifying_cloud_volumes_for_aws.html 
+keywords: Cloud Volumes Service for AWS, volume names, allocated capacity, service levels. 
+summary: 您可以修改现有卷，包括更改卷名称，已分配容量或服务级别。 
+---
+= 修改云卷
+:toc: macro
+:hardbreaks:
+:toc: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
+
+
+[role="lead"]
+您可以修改现有卷，包括更改卷名称，已分配容量或服务级别。
+
+.步骤
+. 登录到 https://cds-aws-bundles.netapp.com/storage/volumes["NetApp Cloud Orchestrator"^]。
+. 单击要管理的卷的名称。
+. 根据需要修改以下卷字段：
++
+** Name
+** Tags
+** 已分配容量
+** 服务级别
++
+更改服务级别不会造成中断，也不会影响客户端数据访问。
+
+
+
+
+
+请注意，可用索引节点的数量取决于分配的容量。
+
+请参见 link:reference_selecting_service_level_and_quota.html["选择适当的服务级别和分配的容量"] 了解详细信息。

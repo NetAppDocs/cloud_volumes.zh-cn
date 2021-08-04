@@ -1,0 +1,30 @@
+---
+sidebar: sidebar_aws 
+permalink: aws/task_modifying_export_policy_rules.html 
+keywords: Cloud Volumes Service for AWS, export policy rules, client access, access types 
+summary: 您可以根据需要修改卷的导出策略规则。 
+---
+= 修改导出策略规则
+:toc: macro
+:hardbreaks:
+:toc: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
+
+
+[role="lead"]
+您可以根据需要修改卷的导出策略规则。
+
+.步骤
+. 单击卷名称，然后选择 * 导出策略 * 。
+. 要更改现有导出策略规则，请根据需要修改以下字段：
++
+** * 允许的客户端 *
+** * 访问类型 *
+
+
+. 单击 * 保存更改 * 。
+

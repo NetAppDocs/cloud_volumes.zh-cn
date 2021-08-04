@@ -1,0 +1,31 @@
+---
+sidebar: sidebar_aws 
+permalink: aws/task_creating_additional_export_policy_rules.html 
+keywords: Cloud Volumes Service for AWS, export policy rules, clients, IP range, access 
+summary: 您可以创建其他导出策略规则以启用灵活的客户端访问。例如，您可以指定给定 IP 范围只对卷具有只读访问权限。 
+---
+= 创建其他导出策略规则
+:toc: macro
+:hardbreaks:
+:toc: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
+
+
+[role="lead"]
+您可以创建其他导出策略规则以启用灵活的客户端访问。例如，您可以指定给定 IP 范围只对卷具有只读访问权限。
+
+.步骤
+. 单击卷名称，然后选择 * 导出策略 * 。
+. 单击 * + 添加导出策略规则 * 。
+. 为以下字段设置值：
++
+** * 允许的客户端 *
+** * 访问类型 *
+
+
+. 单击 * 保存更改 * 。
+

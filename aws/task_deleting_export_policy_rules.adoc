@@ -1,0 +1,28 @@
+---
+sidebar: sidebar_aws 
+permalink: aws/task_deleting_export_policy_rules.html 
+keywords: Cloud Volumes Service for AWS, export policy rules 
+summary: 您可以删除不再需要的导出策略规则。 
+---
+= 正在删除导出策略规则
+:toc: macro
+:hardbreaks:
+:toc: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
+
+
+[role="lead"]
+您可以删除不再需要的导出策略规则。
+
+.步骤
+. 单击卷名称，然后选择 * 导出策略 * 。
+. 对于要删除的策略规则，请单击 * 。
++
+image:diagram_export_policy_delete.png["删除导出策略"]
+
+. 单击 * 保存更改 * 。
+

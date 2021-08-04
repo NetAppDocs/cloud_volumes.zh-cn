@@ -1,0 +1,59 @@
+---
+sidebar: sidebar_aws 
+permalink: aws/task_creating_cloud_sync_relationship.html 
+keywords: Cloud Volumes Service for AWS, Cloud Sync relationships, target, source 
+summary: 通过 Cloud Sync 关系，您可以将数据同步到云卷或从云卷同步数据。 
+---
+= 创建 Cloud Sync 关系
+:toc: macro
+:hardbreaks:
+:toc: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
+
+
+[role="lead"]
+通过 Cloud Sync 关系，您可以将数据同步到云卷或从云卷同步数据。
+
+.开始之前
+* 您必须已有 Cloud Sync 数据代理。
++
+link:task_creating_cloud_sync_data_broker.html["创建 Cloud Sync 数据代理"]
+
+* 必须已将数据代理 IP 地址添加到源卷和目标卷的导出策略中。
++
+目标卷上的导出策略必须允许对数据代理进行写入访问。
+
++
+link:task_creating_additional_export_policy_rules.html["创建其他导出策略规则"]
+
+
+
+与 Cloud Volumes Service 集成的 Cloud Sync 功能当前仅支持 NFSv3 。如果要在 SMB 卷之间同步，请使用 https://cloudsync.netapp.com["Cloud Sync 服务"^] 直接（ cloudsync.netapp.com ）。
+
+.步骤
+. 转到卷页面上的同步页面或卷的同步选项卡。
+. 单击 * 创建新关系 * 以创建 Cloud Sync 关系。
+. 执行以下操作之一：
++
+** 要将数据同步到卷，请选择 * 使用卷作为目标 * 。
+** 要同步卷中的数据，请选择 * 使用卷作为源 * 。
++
+image::diagram_creating_cloud_sync_relationship.png[创建 Cloud Sync 关系]
+
+
+
+. 在 * 主机 * 字段（未填充）中，输入要同步或从中同步的 NFS 服务器的 IP 地址。
++
+稍后，系统将自动发现可用导出列表。
+
+. 在 * 导出 * 字段中，选择一个可用导出。
+. （可选）如果要在目标上的文件从源中删除时将其删除，请选中 * 从源中删除时删除目标上的文件 * 复选框。
+. 单击 * 创建关系 * 。
++
+此时将显示关系状态，文件进度字段将显示所复制的文件数。
+
+

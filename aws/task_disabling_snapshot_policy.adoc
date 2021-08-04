@@ -1,0 +1,30 @@
+---
+sidebar: sidebar_aws 
+permalink: aws/task_disabling_snapshot_policy.html 
+keywords: Cloud Volumes Service for AWS, snapshot policies 
+summary: 如果要在保留快照策略设置的同时在短时间内停止创建快照，则可以禁用快照策略。 
+---
+= 禁用快照策略
+:toc: macro
+:hardbreaks:
+:toc: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
+
+
+[role="lead"]
+您可以禁用快照策略，以便在保留快照策略设置的同时，在短时间内停止创建快照。
+
+.步骤
+. 在卷页面中，单击卷名称，然后选择 * 快照策略 * 。
+. 单击 * 已启用 * 按钮以 * 关闭 * 以禁止创建快照。
++
+image:diagram_snapshot_policy_button.png["Snapshot 策略启用按钮"]
+
+. 单击 * 保存更改 * 。
+
+
+要重新启用快照策略，请单击 * 已启用 * 按钮以打开 * ，然后单击 * 保存更改 * 。

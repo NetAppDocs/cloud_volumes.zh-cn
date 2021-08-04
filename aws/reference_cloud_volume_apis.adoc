@@ -1,0 +1,319 @@
+---
+sidebar: sidebar_aws 
+permalink: aws/reference_cloud_volume_apis.html 
+keywords: Cloud Volumes Service for AWS, APIs 
+summary: 通过 Web UI 提供的 Cloud Volumes 功能也可通过 RESTful API 获得。通过 API ，您可以创建和管理云卷以及开发配置脚本和工具。 
+---
+= Cloud Volumes APIs
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+通过 Web UI 提供的 Cloud Volumes 功能也可通过 RESTful API 获得。通过 API ，您可以创建和管理云卷以及开发配置脚本和工具。
+
+
+
+== 查找 API URL ， API 密钥和机密密钥
+
+要运行 API 调用，您需要获取 Cloud Volumes API URL ， API 密钥和机密密钥。
+
+.步骤
+. 单击存储页面上的 * API access* 或用户名下拉菜单中的。
+. 记录 Cloud Volumes API URL ， API 密钥和机密密钥。
+
+
+link:media/test.conf["显示帐户的 API URL ， API 密钥和机密密钥的示例文件"]
+
+
+
+== 列出可用的 API
+
+存储页面将显示您可以使用的可用 API 。
+
+.步骤
+. 单击存储页面上的 * API Documents* 。
++
+此页面将列出可用的 API 。
+
+. 滚动浏览页面以查看可用的 API 。
++
+API 按功能列出，例如：
+
++
+** `卷`
+** `m挂载项`
+** `s存储`
+** `s快照`
+
+
+. 要获取有关如何使用 API 调用的详细信息和示例，请选择相应功能并单击以下操作之一：
++
+** `GET` ：读取
+** `发布` ：创建
+** `PUT` ：更新或修改
+** `delete` ：销毁
+
+
+
+
+
+
+== 使用 Cloud Volumes API
+
+本节介绍如何使用 Cloud Volumes API 。这些示例使用 Linux bash shell 中的 curl 。您需要将 ` <api_url>` ， ` <api_key>` 和 ` <secret_key>` 替换为您从记录的值 <<finding_urL_key_secretKey,查找 API URL ， API 密钥和机密密钥>>。
+
+
+
+=== 语法
+
+` * cURL -s -H accept ： application/json -H "Content-type ： application/json" -H api-key ： <api_key> -H secret-key ： <secret_key> -X [get ， post ， put ， delete] <api_url>/v2/<command>*`
+
+
+
+=== 示例
+
+
+
+==== 列出卷
+
+以下示例显示了有关所有卷的信息：
+
+
+NOTE: 通过 `JQ` 传送命令可改进 `json` 输出的格式。您可能需要在系统上安装 `JQ` 。
+
+[source, json]
+----
+curl -s -H accept:application/json -H "Content-type: application/json" -H api-key:<api_key> -H secret-key:<secret_key> -X GET <api_url>/v2/Volumes | jq
+----
+link:media/list-cv.py["用于列出帐户中的云卷的脚本"]
+
+
+
+==== 列出特定卷的详细信息
+
+每个卷的 ID 均名为 `volumeId` ，例如， `07c9ab6c-b655-a9fe-f904-b9b97ef9baa` 。在 API 调用中包含 ID 可提供特定卷的详细信息：
+
+[source, json]
+----
+curl -s -H accept:application/json -H "Content-type: application/json" -H api-key:<api_key> -H secret-key:<secret_key> -X GET <api_url>/v2/Volumes/<volumeId> | jq
+----
+
+
+==== Creating a volume
+
+以下示例使用 `post` 调用创建一个名为 `Test` 的卷，位于区域 `us-west-1` 中，其 `Allocated capacity` of 100 GB ，并使用 `NFSv3` 导出：
+
+[source, json]
+----
+curl -s -H accept:application/json -H "Content-type: application/json" -H api-key:<api_key> -H secret-key:<secret_key> -X POST <api_url>/v2/Volumes -d '
+{
+	"name": "Test",
+	"creationToken": "grahams-test-volume3",
+	"region": "us-west-1",
+	"serviceLevel": "standard",
+	"quotaInBytes": 100000000000,
+	"exportPolicy": {"rules": [{"ruleIndex": 1,"allowedClients": "0.0.0.0/0","unixReadOnly": false,"unixReadWrite": true,"cifs": false,"nfsv3": true,"nfsv4": false}]},
+	"protocolTypes": ["NFSv3"],
+	"labels": ["test"]
+}'
+----
+link:media/create-cv.py["用于创建云卷的脚本"]
+
+
+
+==== 更新卷
+
+以下示例使用 `put` 调用更新名为 `Test` 的卷，将服务级别更改为 `至` ，并将分配的容量更改为 600 GB ：
+
+[source, json]
+----
+curl -s -H accept:application/json -H "Content-type: application/json" -H api-key:<api_key> -H secret-key:<secret_key> -X PUT <api_url>/v2/Volumes/<volumeId> -d '
+{
+	"serviceLevel": "extreme",
+	"quotaInBytes": 600000000000
+}'
+----
+link:media/update-cv.py["用于更新云卷的脚本"]
+
+
+
+==== Deleting a volume
+
+以下示例使用 `Delete` 调用删除 `volumeId` 指定的卷：
+
+[source, json]
+----
+curl -s -H accept:application/json -H "Content-type: application/json" -H api-key:<api_key> -H secret-key:<secret_key> -X DELETE <api_url>/v2/Volumes/<volumeId>
+----
+link:media/delete-cv.py["用于按挂载点删除云卷的脚本"]
+
+
+IMPORTANT: 请谨慎使用。此 API 调用将删除卷及其所有数据。
+
+
+
+==== 创建快照
+
+以下示例使用 `post` 调用为特定卷创建名为 `snappy` 的快照：
+
+[source, json]
+----
+curl -s -H accept:application/json -H "Content-type: application/json" -H api-key:<api_key> -H secret-key:<secret_key> -X POST <api_url>/v2/Volumes/<volumeId>/Snapshots -d '
+{
+	"name": "<snapshot-name>"
+}'
+----
+link:media/snap-cv.py["用于按挂载点创建云卷快照的脚本"]
+
+
+
+==== 创建快照策略
+
+以下示例使用 `put` 调用为特定卷创建快照策略：
+
+[source, json]
+----
+curl -s -H accept:application/json -H "Content-type: application/json" -H api-key:<api_key> -H secret-key:<secret_key> -X PUT <api_url>/v2/Volumes/<volumeId> -d '
+{
+	"snapshotPolicy": {
+        "dailySchedule": {},
+        "enabled": true,
+        "hourlySchedule": {
+            "minute": 33,
+            "snapshotsToKeep": 24
+        },
+        "monthlySchedule": {},
+        "weeklySchedule": {}
+    }
+}'
+----
+link:media/snapshot-policy.py["用于按挂载点为云卷创建快照策略的脚本"]
+
+
+
+==== 列出特定卷的快照
+
+以下示例使用 `get` 调用列出特定卷的快照：
+
+[source, json]
+----
+curl -s -H accept:application/json -H "Content-type: application/json" -H api-key:<api_key> -H secret-key:<secret_key> -X GET <api_url>/v2/Volumes/<volumeId>/Snapshots
+----
+link:media/get-snaps.py["用于按挂载点列出云卷快照的脚本"]
+
+
+
+==== 还原快照
+
+以下示例使用 `post` 调用从 `snapshotId` 和 `volumeId` 指定的快照还原卷：
+
+[source, json]
+----
+curl -s -H accept:application/json -H "Content-type: application/json" -H api-key:<api_key> -H secret-key:<secret_key> -X POST <api_url>/v2/Volumes/<volumeId>/Revert -d '
+{
+	"snapshotId": "<snapshotId>"
+}'
+----
+link:media/revert-snap.py["用于按 mountpoint 和 snapshotId 还原到云卷快照的脚本"]
+
+
+IMPORTANT: 请谨慎使用。此 API 调用会导致在该快照日期之后写入的任何数据丢失。
+
+
+
+==== 从快照创建新卷
+
+以下示例使用 `post` 调用根据 `snapshotId` 指定的现有卷的快照创建新卷：
+
+[source, json]
+----
+curl -s -H accept:application/json -H "Content-type: application/json" -H api-key:<api_key> -H secret-key:<secret_key> -X POST <api_url>/v2/Volumes -d '
+{
+	"snapshotId": "<snapshotId>",
+	"name": "Copy",
+	"creationToken": "perfectly-copied-volume",
+	"region": "us-west-1",
+	"serviceLevel": "extreme",
+	"protocolTypes": ["NFSv3"]
+}'
+----
+link:media/copy-cv.py["用于复制云卷的脚本"]
+
+
+
+==== 删除快照
+
+以下示例使用 `Delete` 调用删除 `snapshotId` 指定的快照：
+
+[source, json]
+----
+curl -s -H accept:application/json -H "Content-type: application/json" -H api-key:<api_key> -H secret-key:<secret_key> -X DELETE <api_url>/v2/Volumes/<volumeId>/Snapshots/<snapshotId>
+----
+link:media/delete-snap.py["用于按 mountpoint 和 snapshotId 删除云卷快照的脚本"]
+
+
+IMPORTANT: 请谨慎使用。此 API 调用将删除快照及其所有数据。
+
+
+
+==== 正在加入目录服务
+
+以下示例使用 `post` 调用加入目录服务，并提供 DNS IP 地址，域， SMB 服务器的 NetBIOS 名称，目录服务管理员的用户名和密码以及组织单位（可选，默认为 CN=Computers ）。
+
+[source, json]
+----
+curl -s -H accept:application/json -H "Content-type: application/json" -H api-key:<api_key> -H secret-key:<secret_key> -X POST <api_url>/v2/Storage/ActiveDirectory -d '
+{
+	"DNS": "<ip-address>",
+	"domain": "<domain>",
+	"netBIOS": "<netbios-name>",
+	"organizationalUnit": "OU=Cloud Servers,DC=nas-cloud,DC=local",
+	"password": "secret",
+	"region": "us-west-1",
+	"username": "Administrator"
+}'
+----
+link:media/join-ad.py["用于加入目录服务的脚本"]
+
+
+
+==== 查看目录服务集成
+
+以下示例使用 `get` 调用来显示目录服务集成的配置。
+
+[source, json]
+----
+curl -s -H accept:application/json -H "Content-type: application/json" -H api-key:<api_key> -H secret-key:<secret_key> -X GET <api_url>/v2/Storage/ActiveDirectory
+----
+link:media/get-ad.py["用于查看目录服务集成的脚本"]
+
+
+
+==== 正在取消加入目录服务
+
+以下示例使用 `Delete` 调用取消加入目录服务集成。这需要当前加入的 UUID ，可通过上面列出的 `get` 调用来找到。
+
+
+NOTE: 您不能取消加入正在使用的目录服务；状态为 " 正在使用 " 。
+
+[source, json]
+----
+curl -s -H accept:application/json -H "Content-type: application/json" -H api-key:<api_key> -H secret-key:<secret_key> -X DELETE <api_url>/v2/Storage/ActiveDirectory/<UUID>
+----
+link:media/unjoin-ad.py["用于取消加入目录服务的脚本"]
+
+
+
+==== 获取性能统计信息
+
+以下示例使用 `get` 调用列出由 `volumeId` 指定的卷在特定时间段内的读取和写入 IOPS ，吞吐量和延迟统计信息。
+
+[source, json]
+----
+curl -s -H accept:application/json -H "Content-type: application/json" -H api-key:<api_key> -H secret-key:<secret_key> -X GET '<api_url>/v2/Volumes/<volumeId>/PerformanceMetrics?startDate=2021-02-05T09:00&endDate=2021-02-05T09:05&type=READ_IOPS,WRITE_IOPS,TOTAL_THROUGHPUT,AVERAGE_OTHER_LATENCY'
+----
+link:media/get-perfstats.py["用于按挂载点获取云卷性能统计信息的脚本"]

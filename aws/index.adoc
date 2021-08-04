@@ -1,0 +1,59 @@
+---
+sidebar: sidebar_aws 
+permalink: aws/index.html 
+summary: 欢迎使用 NetApp Cloud Volumes Service for AWS 文档门户。 
+---
+= NetApp Cloud Volumes Service for AWS 文档
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:keywords: cloud volumes, amazon web services, AWS, documentation, help
+
+
+[role="lead"]
+NetApp Cloud Volumes Service for AWS 是一种云原生文件服务，可通过 NFS 和 SMB 提供具有全闪存性能的 NAS 卷。此服务支持在 AWS 云中运行任何工作负载，包括原有应用程序。
+
+
+
+== 使用 Cloud Volumes Service for AWS 的优势
+
+Cloud Volumes Service for AWS 具有以下优势：
+
+* 稳定一致的高性能
+* 不影响性能的数据保护
+* 即时克隆，支持操作，开发和测试工作流
+* 支持 NFSv3 和 NFSv4.1 ， SMB 2.1 ， 3.0 和 3.1.1 NAS 协议
+* 安全访问 Linux 和 Windows 弹性容器服务（ Elastic Container Service ， ECS ）实例，并提供以下支持：
++
+** Amazon Linux 2 ， Red Hat Enterprise Linux 7.5 ， SLES 12 SP3 和 Ubuntu 16.04 LTS
+** Windows Server 2008 R2 ， Windows Server 2012 R2 和 Windows Server 2016
+
+
+* 完全托管服务，因此无需配置或管理存储设备
+* 可选择捆绑定价和按需购买定价
+
+
+
+
+== 执行首要任务
+
+* link:task_selecting_region.html["选择区域"]
+* link:task_creating_cloud_volumes_for_aws.html["创建云卷"]
+* link:task_mounting_cloud_volumes_for_aws.html["挂载云卷"]
+* link:task_creating_on_demand_snapshots.html["为云卷创建按需快照"]
+
+
+
+
+== 了解适用于 AWS 的 Cloud Volumes Service
+
+video::hL4rosv-iZQ[youtube, width=848,height=480]
+
+
+== 了解更多信息
+
+* https://cloud.netapp.com/home["NetApp Cloud Central"^]
+* https://www.netapp.com/us/forms/campaign/register-for-netapp-cloud-volumes-for-aws.aspx?hsCtaTracking=4f67614a-8c97-4c15-bd01-afa38bd31696%7C5e536b53-9371-4ce1-8e38-efda436e592e["抢先了解适用于 AWS 的全新 NetApp Cloud Volumes Service"^]
+

@@ -1,0 +1,76 @@
+---
+sidebar: sidebar_aws 
+permalink: aws/task_creating_cloud_sync_data_broker.html 
+keywords: Cloud Volumes Service for AWS, Cloud Sync, data brokers, sync relationships 
+summary: NetApp Cloud Sync 与 NetApp Cloud Volumes Service for AWS 集成，可实现与云卷之间的快速数据同步。通过 Cloud Sync 数据代理，您可以创建 Cloud Sync 关系以同步数据。 
+---
+= 创建 Cloud Sync 数据代理
+:toc: macro
+:hardbreaks:
+:toc: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
+
+
+[role="lead"]
+NetApp Cloud Sync 与 NetApp Cloud Volumes Service for AWS 集成，可通过 NFS 与云卷快速同步数据。通过 Cloud Sync 数据代理，您可以创建 Cloud Sync 关系以同步数据。
+
+如果您已在用于 Cloud Volumes 帐户的同一 AWS 虚拟私有云（ VPC ）中有 Cloud Sync 数据代理，则可以跳过此任务。
+
+https://docs.netapp.com/us-en/cloudsync/["NetApp Cloud Sync 文档"^]
+
+.步骤
+. 转到卷页面上的同步页面或卷的同步选项卡。
+. 单击 * 创建数据代理 * 以创建数据代理。
+. 为以下字段提供信息：
++
+** * 名称 *
++
+提供数据代理的名称。
+
+** * 类型 *
++
+选择 AWS 。
+
+** * 地区 *
++
+选择一个可用区域。
+
+** * API 密钥 *
++
+提供 AWS 帐户的访问密钥。
+
+** * 机密密钥 *
++
+为您的 AWS 帐户提供机密密钥。
+
+** * 基普亚里 *
++
+选择一个可用的密钥对。
+
++
+输入有效密钥后，密钥类型将更新。
+
+** * vpc*
++
+选择连接到 Cloud Volumes 帐户的 VPC 。
+
+** * 子网 *
++
+选择一个可用于数据代理的子网。
+
++
+image::diagram_creating_cloud_sync_data_broker.png[创建 Cloud Sync 数据代理]
+
+
+
+. 单击 * 创建数据代理 * 以启动数据代理创建过程。
++
+创建数据代理需要几分钟时间。创建数据代理后，该代理将以绿色圆点标记，以指示其已准备就绪。
+
+
+
+继续 link:task_creating_cloud_sync_relationship.html["创建 Cloud Sync 关系"]。

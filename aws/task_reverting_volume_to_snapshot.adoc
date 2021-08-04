@@ -1,0 +1,28 @@
+---
+sidebar: sidebar_aws 
+permalink: aws/task_reverting_volume_to_snapshot.html 
+keywords: Cloud Volumes Service for AWS, snapshots, restore, revert 
+summary: 您可以将卷从现有快照还原到较早的时间点。 
+---
+= 从快照还原卷
+:toc: macro
+:hardbreaks:
+:toc: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
+
+
+[role="lead"]
+您可以将卷从现有快照还原到较早的时间点。
+
+还原卷时，快照的内容会覆盖现有卷配置。创建快照后对卷中数据所做的任何更改都将丢失。
+
+请注意，在执行还原操作后，客户端不需要重新挂载卷。
+
+.步骤
+. 在 Snapshot 页面或卷详细信息的 Snapshot 选项卡中，选择要还原到的快照，单击 * 可用 * ，然后选择 * 将卷还原到 Snapshot* 。
+. 在还原快照对话框中，重新输入要还原的卷的名称，然后单击 * 还原 * 。
+

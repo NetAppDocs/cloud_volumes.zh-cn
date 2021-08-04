@@ -1,0 +1,37 @@
+---
+sidebar: sidebar_aws 
+permalink: aws/reference_known_issues.html 
+keywords: Cloud Volumes Service for AWS limitations and known issues 
+summary: Cloud Volumes Service for AWS 存在以下已知问题和限制。 
+---
+= 已知问题和限制
+:toc: macro
+:hardbreaks:
+:toc: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
+
+
+[role="lead"]
+Cloud Volumes Service for AWS 存在以下已知问题和限制。
+
+* * NFSv* ：如果现有卷仅支持问题描述，并且在创建或转换卷时支持 NFSv4.1 或同时支持 NFSv3 和 NFSv4.1 ，则在未指定 NFS 版本（ vers=3 ）的情况下，现有卷可能无法挂载。
++
+* NFSv* ：向 mount 命令添加用于指定临时解决策版本的选项，例如 `mount -o vers=3 ...` 或确保所有卷均已转换为支持 4.1 。请注意，除非指定版本，否则 Linux 客户端将默认使用 NFSv4.1 。
+
+* * 问题描述 * ：从快照创建新卷可能会失败，并显示消息 " 无法为卷 _< 卷 >_ 设置卷属性 "files" …​ 原因：新计数必须大于当前分配的计数 <<number>_' 。
++
+* 临时解决策 * ：尝试从当前分配给卷的文件数超过新卷分配的容量的快照创建卷时，会发生此问题描述。要分配足够的文件（索引节点），必须增加为新卷分配的容量。请参见 link:reference_selecting_service_level_and_quota.html#allocated-capacity["选择已分配的容量"] 了解详细信息。
+
+* * cvs* ：在 72 小时后没有卷的问题描述区域中，网络虚拟接口将自动删除。创建新卷时，您需要重新提供 AWS 帐户编号和 CIDR 。
++
+* 临时解决策 * ：要避免在非活动期间删除网络虚拟接口，请至少保留一个卷并降低分配和服务级别，以最大限度地降低成本。
+
+* * 问题描述 API ：订阅已过期的用户无法登录到 Cloud Volumes Service 用户界面或与 API 进行交互。
++
+* 临时解决策 AWS Marketplace * ：转到 Cloud Volumes Service 的 "AWS Marketplace " 页面并续订您的订阅。
+
+

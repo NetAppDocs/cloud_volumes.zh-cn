@@ -1,0 +1,36 @@
+---
+sidebar: sidebar_aws 
+permalink: aws/task_selecting_region.html 
+keywords: Cloud Volumes Service for AWS, regions 
+summary: Cloud Volumes Service 可在许多 AWS 地区使用。在创建云卷之前，您必须指定要使用此服务的区域。 
+---
+= 选择区域
+:toc: macro
+:hardbreaks:
+:toc: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
+
+
+[role="lead"]
+Cloud Volumes Service 可在许多 AWS 地区使用。在创建云卷之前，您必须指定要使用此服务的区域。
+
+.步骤
+. 导航到 https://cds-aws-bundles.netapp.com/storage/volumes["NetApp Cloud Orchestrator"^] 站点，然后使用您在订阅期间提供的电子邮件地址登录。
++
+您应将此 URL 添加到书签。您需要稍后返回到该选项。
+
+. 从顶部面板的 * 可用区域 * 下拉菜单中，选择要使用的区域。
++
+此选择过程与您在 AWS 控制台中更改区域的方式类似。
+
++
+image::diagram_selecting_region.png[选择区域]
+
+. 如果要创建云卷，请对其他每个区域重复上述步骤。
+
+
+* 注意： * Cloud Volumes 用户界面中显示的区域可能使用的格式与您在 AWS 用户界面中选择的区域不同。例如， Cloud Volumes UI 中的 _us-east-1_ 对应于 AWS 控制台中选择的 _N.Virginia 区域。请参见 https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Concepts.RegionsAndAvailabilityZones.html["区域和可用性区域"^] 用于映射区域名称，以确保在两个接口中选择相同的区域。

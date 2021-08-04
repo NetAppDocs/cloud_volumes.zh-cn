@@ -1,0 +1,35 @@
+---
+sidebar: sidebar_aws 
+permalink: aws/task_modifying_cloud_sync_schedule.html 
+keywords: Cloud Volumes Service for AWS, Cloud Sync schedule, auto sync 
+summary: 首次创建 Cloud Sync 关系时，默认情况下会启用自动同步，并计划每天运行一次。您可以根据需要修改 Cloud Sync 计划。 
+---
+= 修改 Cloud Sync 计划
+:toc: macro
+:hardbreaks:
+:toc: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
+
+
+[role="lead"]
+首次创建 Cloud Sync 关系时，默认情况下会启用自动同步，并计划每天运行一次。您可以根据需要修改 Cloud Sync 计划。
+
+.步骤
+. 转到卷页面上的同步页面或卷的同步选项卡以查看 Cloud Sync 关系。
++
+image::diagram_modifying_cloud_sync_schedule_sync_relationship.png[同步关系]
+
+. 要关闭 Cloud Sync 关系的自动同步，请单击该关系的蓝色 * 开 * 滑块。
++
+image::diagram_modifying_cloud_sync_schedule_auto_sync.png[自动同步滑块]
+
+. 要更改同步计划，请单击 * 计划 * 下的下拉列表，选择 * 天 / 秒 * 或 * 小时 / 秒 * ，选择间隔编号，然后单击复选标记。
++
+image::diagram_modifying_cloud_sync_schedule.png[修改 Cloud Sync 计划]
+
+. 要立即启动 Cloud Sync ，请单击操作下的 * 完成 * ，选择 * 立即同步 * ，然后再次单击 * 立即同步 * 进行确认。
+

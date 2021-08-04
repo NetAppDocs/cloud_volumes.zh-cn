@@ -1,0 +1,42 @@
+---
+sidebar: sidebar_aws 
+permalink: aws/task_creating_on_demand_snapshots.html 
+keywords: Cloud Volumes Service for AWS, snapshots, on-demand 
+summary: 您可以从卷或快照页面创建云卷的按需快照。 
+---
+= 为云卷创建按需快照
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+您可以从卷或快照页面创建云卷的按需快照。
+
+
+
+== 从卷页面创建快照
+
+.步骤
+. 单击卷名称，选择 * 快照 * ，然后单击 * + 创建新快照 * 。
+. 输入快照的名称或使用自动生成的名称。
+. 选择卷名称，然后从下拉列表中选择要为其创建快照的卷。
+. 单击 * 创建快照 * 。
+
+
+此时将显示已创建的快照。
+
+
+
+== 从 Snapshots 页面创建快照
+
+.步骤
+. 单击 * + Create new snapshot* 。
+. 输入快照的名称或使用自动生成的名称。
+. 从下拉列表中，选择要为其创建快照的卷。
+. 单击 * 创建快照 * 。
+
+
+此时将列出创建的快照。

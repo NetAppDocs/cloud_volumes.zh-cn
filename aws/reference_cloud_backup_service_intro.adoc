@@ -1,0 +1,22 @@
+---
+sidebar: sidebar_aws 
+permalink: aws/reference_cloud_backup_service_intro.html 
+keywords: Cloud Volumes Service for AWS, Cloud Backup Service 
+summary: 您可以使用 Cloud Backup Service 备份 NFS 云卷。 
+---
+= 使用 Cloud Backup Service 管理备份（美国西部 2 的测试版）
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+您可以使用 Cloud Backup Service 备份 NFS 云卷。
+
+Cloud Backup Service 通过提供专用备份来实现长期恢复，归档和合规性，扩展了 Cloud Volumes Service 的数据保护功能。服务创建的备份存储在 AWS S3 对象存储中，与可用于近期恢复或克隆的云卷快照无关。
+
+Cloud Backup Service 目前处于测试版阶段，在 AWS US-West-2 区域仅支持 Cloud Volumes Service 。
+
+在使用 Cloud Backup Service 之前，您必须了解并接受使用测试版软件的条款，要求和注意事项。请参见 link:media/cloud_backup_service_beta.pdf["为适用于 AWS 的 NetApp Cloud Volumes Service 设置 Cloud Backup Service"^] 有关使用此服务的详细信息和说明。

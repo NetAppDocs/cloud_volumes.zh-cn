@@ -1,0 +1,28 @@
+---
+sidebar: sidebar_aws 
+permalink: aws/task_restoring_snapshots_to_new_volumes.html 
+keywords: Cloud Volumes Service for AWS, snapshots, restore 
+summary: 您可以根据需要将快照还原到新卷。 
+---
+= 将快照还原到新卷
+:toc: macro
+:hardbreaks:
+:toc: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
+
+
+[role="lead"]
+您可以根据需要将快照还原到新卷。
+
+.步骤
+. 在 Snapshot 页面或卷详细信息的 Snapshots 部分中，选择要还原的快照，单击 * 可用 * ，然后选择 * 还原到卷 * 。
+. 在创建卷对话框中，输入新卷的名称，并根据需要编辑其他设置。
++
+link:task_creating_cloud_volumes_for_aws.html["创建云卷"]
+
+. 查看设置，然后单击 * 创建卷 * 完成将快照还原到新卷的操作。
+

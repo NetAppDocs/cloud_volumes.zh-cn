@@ -1,0 +1,39 @@
+---
+sidebar: sidebar_aws 
+permalink: aws/task_deleting_snapshots.html 
+keywords: Cloud Volumes Service for AWS, snapshots 
+summary: 您可以从卷或快照页面中删除快照。 
+---
+= 删除快照
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+您可以从卷或快照页面中删除快照。
+
+
+
+== 从卷页面删除快照
+
+.步骤
+. 单击卷名称，然后选择 * 快照 * 以查看卷的快照列表。
+. 通过选中相应的复选框，单击 * 操作 * ，然后从下拉列表中选择 * 删除 snapshot/s* 来指定要删除的快照。
++
+或者，您也可以单击操作下的 * 可用 * ，然后从下拉列表中选择 * 删除 snapshot* 。
+
+. 在确认对话框中，键入 `delete` 进行确认，然后单击 * 删除 * 。
+
+
+
+
+== 从 "Snapshots" 页面中删除快照
+
+.步骤
+. （可选）使用搜索框筛选列出的快照。
+. 通过选中相应的复选框，单击 * 操作 * ，然后从下拉列表中选择 * 删除 snapshot/s* 来指定要删除的快照。
+. 在确认对话框中，键入 `delete` 进行确认，然后单击 * 删除 * 。
+
