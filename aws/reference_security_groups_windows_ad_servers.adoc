@@ -1,5 +1,5 @@
 ---
-sidebar: sidebar_aws 
+sidebar: sidebar 
 permalink: aws/reference_security_groups_windows_ad_servers.html 
 keywords: Cloud Volumes Service for AWS, security groups, ports, protocols, Windows, Active Directory, AD 
 summary: 如果您将 Windows Active Directory （ AD ）服务器与云卷结合使用，则应熟悉 AWS 安全组设置指南。通过这些设置，云卷可以与 AD 正确集成。 

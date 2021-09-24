@@ -1,0 +1,75 @@
+---
+sidebar:
+  entries:
+  - title: Cloud Volumes Service for AWS 文档
+    url: "/aws/index.html"
+  - title: 发行说明
+    entries:
+    - title: 新增功能
+      url: "/aws/reference_whats_new_cloud_volumes_aws.html"
+    - title: 已知问题
+      url: "/aws/reference_known_issues.html"
+  - title: 入门
+    entries:
+    - title: 前提条件
+      url: "/aws/concept_overview.html"
+    - title: 快速入门说明
+      url: "/aws/task_quick_start.html"
+    - title: 激活支持授权并访问支持
+      url: "/aws/task_activating_support_entitlement.html"
+    - title: 选择区域
+      url: "/aws/task_selecting_region.html"
+  - title: 管理云卷
+    entries:
+    - title: 创建云卷
+      url: "/aws/task_creating_cloud_volumes_for_aws.html"
+    - title: 挂载云卷
+      url: "/aws/task_mounting_cloud_volumes_for_aws.html"
+    - title: 修改云卷
+      url: "/aws/task_modifying_cloud_volumes_for_aws.html"
+    - title: 删除云卷
+      url: "/aws/task_deleting_cloud_volumes_for_aws.html"
+  - title: 管理云卷快照
+    entries:
+    - title: 为云卷创建按需快照
+      url: "/aws/task_creating_on_demand_snapshots.html"
+    - title: 创建或修改快照策略
+      url: "/aws/task_creating_modifying_snapshot_policies.html"
+    - title: 禁用快照策略
+      url: "/aws/task_disabling_snapshot_policy.html"
+    - title: 从快照还原卷
+      url: "/aws/task_reverting_volume_to_snapshot.html"
+    - title: 删除快照
+      url: "/aws/task_deleting_snapshots.html"
+    - title: 将快照还原到新卷
+      url: "/aws/task_restoring_snapshots_to_new_volumes.html"
+  - title: 管理导出策略规则
+    entries:
+    - title: 修改导出策略规则
+      url: "/aws/task_modifying_export_policy_rules.html"
+    - title: 创建其他导出策略规则
+      url: "/aws/task_creating_additional_export_policy_rules.html"
+    - title: 正在删除导出策略规则
+      url: "/aws/task_deleting_export_policy_rules.html"
+  - title: 管理适用于云卷的 Cloud Sync
+    entries:
+    - title: 创建 Cloud Sync 数据代理
+      url: "/aws/task_creating_cloud_sync_data_broker.html"
+    - title: 创建 Cloud Sync 关系
+      url: "/aws/task_creating_cloud_sync_relationship.html"
+    - title: 修改 Cloud Sync 计划
+      url: "/aws/task_modifying_cloud_sync_schedule.html"
+    - title: 删除 Cloud Sync 关系
+      url: "/aws/task_deleting_cloud_sync_relationship.html"
+    - title: 删除 Cloud Sync 数据代理
+      url: "/aws/task_deleting_cloud_sync_data_broker.html"
+  - title: Cloud Volumes APIs
+    url: "/aws/reference_cloud_volume_apis.html"
+  - title: 参考
+    entries:
+    - title: 适用于 Windows AD 服务器的 AWS 安全组设置
+      url: "/aws/reference_security_groups_windows_ad_servers.html"
+    - title: 选择适当的服务级别和分配的容量
+      url: "/aws/reference_selecting_service_level_and_quota.html"
+  - title: 法律声明
+    url: "/aws/reference_notices.html"

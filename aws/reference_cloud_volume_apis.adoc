@@ -1,5 +1,5 @@
 ---
-sidebar: sidebar_aws 
+sidebar: sidebar 
 permalink: aws/reference_cloud_volume_apis.html 
 keywords: Cloud Volumes Service for AWS, APIs 
 summary: 通过 Web UI 提供的 Cloud Volumes 功能也可通过 RESTful API 获得。通过 API ，您可以创建和管理云卷以及开发配置脚本和工具。 

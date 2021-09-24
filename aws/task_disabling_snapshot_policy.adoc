@@ -1,5 +1,5 @@
 ---
-sidebar: sidebar_aws 
+sidebar: sidebar 
 permalink: aws/task_disabling_snapshot_policy.html 
 keywords: Cloud Volumes Service for AWS, snapshot policies 
 summary: 如果要在保留快照策略设置的同时在短时间内停止创建快照，则可以禁用快照策略。 

@@ -1,5 +1,5 @@
 ---
-sidebar: sidebar_aws 
+sidebar: sidebar 
 permalink: aws/reference_selecting_service_level_and_quota.html 
 keywords: Cloud Volumes Service for AWS, security levels, bandwidth, capacity 
 summary: Cloud Volumes Service for AWS 的成本取决于您选择的服务级别和已分配容量。选择适当的服务级别和容量有助于您以最低的成本满足存储需求。 
