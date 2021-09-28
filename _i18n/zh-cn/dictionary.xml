@@ -727,7 +727,6 @@
   <block id="fdd6f311911c5ac6b3d7fa483c4361a4" category="inline-link-macro">NetApp Cloud Volumes Service 通知</block>
   <block id="2eddbc97a9bb8863399f4edfdcd0d4c7" category="list-text"><block ref="2eddbc97a9bb8863399f4edfdcd0d4c7" category="inline-link-macro-rx"></block></block>
   <block id="8a11b7df22322ab2814174e7745c863f" category="inline-link-macro">ONTAP 注意事项</block>
-  <block id="587b9b965541a8045104931f22045c2b" category="list-text"><block ref="587b9b965541a8045104931f22045c2b" category="inline-link-macro-rx"></block></block>
   <block id="8b9f9b0e63f1a86cc6b639972644976b" category="summary">Cloud Volumes Service 可在许多 AWS 地区使用。在创建云卷之前，您必须指定要使用此服务的区域。</block>
   <block id="8bc6a1267631e7efc719b0823643828f" category="doc">选择区域</block>
   <block id="940753e5b9fc6075a74b1db65010cdc4" category="inline-link">NetApp Cloud Orchestrator</block>
@@ -1075,4 +1074,5 @@
   <block id="397ff3bc347de43dbcde7cdb242690fe" category="sidebar">管理导出策略规则</block>
   <block id="ff2741973abb478532d388257d6165e5" category="sidebar">管理适用于云卷的 Cloud Sync</block>
   <block id="63d5049791d9d79d86e9a108b0a999ca" category="sidebar">参考</block>
+  <block id="0df28895f8b16f3a9b7b4a540bc2f0ae" category="list-text"><block ref="0df28895f8b16f3a9b7b4a540bc2f0ae" category="inline-link-macro-rx"></block></block>
 </blocks>

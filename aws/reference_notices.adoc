@@ -50,5 +50,5 @@ https://www.netapp.com/us/legal/privacypolicy/index.aspx[]
 通知文件提供有关 NetApp 软件中使用的第三方版权和许可证的信息。
 
 * link:media/notice_cloud_volumes_aws.pdf["NetApp Cloud Volumes Service 通知"^]
-* link:media/notice_ONTAP_95.pdf["ONTAP 注意事项"^]
+* link:media/notice_ONTAP_98.pdf["ONTAP 注意事项"^]
 
