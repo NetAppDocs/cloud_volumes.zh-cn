@@ -1,0 +1,1131 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head class="at-element-marker">
+  <title>激活支持授权并访问支持</title>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1">
+  <meta http-equiv="language" content="en">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:title" content="激活支持授权并访问支持" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://docs.netapp.com/zh-cn/cloud_volumes/aws/task_activating_support_entitlement.html" />
+	<meta property="og:description" content="订阅 AWS Marketplace 后不久即可访问 Cloud Volumes Service 后，强烈建议您激活支持授权。激活支持授权后，您可以通过在线聊天， Web 服务单系统和电话访问技术支持。" />
+  <meta property="og:image" content="https://docs.netapp.com/zh-cn/cloud_volumes/images/logo-tophat-social.png" />
+  <meta property="og:image:alt" content="NetApp Logo" />
+  <meta name="format-detection" content="telephone=no">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="encoding" content="utf-8">
+  <meta http-equiv="nss-type" content="Product Documentation"/>
+  <meta http-equiv="nss-subtype" content="User Guide"/>
+  
+  <meta name="description" content="订阅 AWS Marketplace 后不久即可访问 Cloud Volumes Service 后，强烈建议您激活支持授权。激活支持授权后，您可以通过在线聊天， Web 服务单系统和电话访问技术支持。">
+  <meta name="keywords" content=" Cloud Volumes Service for AWS, support entitlement, NetApp serial number, ticketing">
+  
+  
+
+  <!-- Icons -->
+  <link rel="icon" href="/zh-cn/cloud_volumes/images/favicon.ico" type="image/x-icon">
+
+  <!-- RSS Feed -->
+  
+
+  <!-- CSS Definitions: NetApp CSS should be defined after generic css -->
+
+  <!-- Elastic Search -->
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/searchkit/0.10.0/theme.css">
+
+  <!-- Controls AsciiDoctor Admonition Blocks -->
+  <link rel="stylesheet" type="text/css" href="/zh-cn/cloud_volumes/css/font-awesome.min.css">
+
+  <!-- Controls the shadow effect for search dropdown menu -->
+  <link rel="stylesheet" href="/zh-cn/cloud_volumes/css/boxshadowproperties.css">
+
+  <!-- NetApp CSS controls the technical content -->
+  <link rel="stylesheet" type="text/css" href="/zh-cn/cloud_volumes/css/netapp.css">
+
+  <!-- WWW CSS Content -->
+  <link rel="stylesheet" type="text/css" href="/zh-cn/cloud_volumes/css/www-luci-dotcom.min.css">
+  <link rel="stylesheet" type="text/css" href="/zh-cn/cloud_volumes/css/www-netapp-dotcom.css">
+  <link rel="stylesheet" href="/zh-cn/cloud_volumes/css/www-netapp-library-critical.min.css" media="all" >
+  <link rel="stylesheet" href="/zh-cn/cloud_volumes/css/www-netapp-library-non-critical.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="stylesheet" href="/zh-cn/cloud_volumes/css/www-netapp-library-global-header-footer.min.css">
+
+  <!-- NetApp IE Customizations -->
+  <link rel="stylesheet" href='/zh-cn/cloud_volumes/css/na-utility.css' type='text/css'>
+  <link rel="stylesheet" href='/zh-cn/cloud_volumes/css/na-sidebar.css' type='text/css'>
+  <link rel='stylesheet' href='/zh-cn/cloud_volumes/css/clouddocs.css' type='text/css'>
+  <link rel='stylesheet' href='/zh-cn/cloud_volumes/css/na-pagenav.css' type='text/css'>
+
+  
+  <link rel="stylesheet" href="/zh-cn/cloud_volumes/css/landing-page.css" type="text/css">
+  <link rel="stylesheet" href="/zh-cn/cloud_volumes/css/tabbed-blocks.css" type="text/css">
+  <link rel="stylesheet" href='/zh-cn/cloud_volumes/css/product-family.css' type="text/css">
+  
+
+  
+  <link rel='stylesheet' href='/zh-cn/cloud_volumes/css/na-feature.css' type='text/css'>
+  
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+  <!-- Used to import Promise for IE. Required for SearchKit -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.3.5/bluebird.min.js"></script>
+  
+    <script src='/zh-cn/cloud_volumes/js/na-search.js'></script>
+  
+
+  
+  <script src='/zh-cn/cloud_volumes/js/na-pagenav.js'></script>
+  
+
+  <link rel='stylesheet' href='/zh-cn/cloud_volumes/css/prism.css' type='text/css'>
+  <link rel='stylesheet' href='/zh-cn/cloud_volumes/css/prism-netapp.css' type='text/css'>
+
+
+  <script src='/zh-cn/cloud_volumes/js/na-utility.js'></script>
+  <script src='/zh-cn/cloud_volumes/js/clouddocs.js'></script>
+  <script>
+  if (document.location.hostname === "docs.netapp.com") {
+    var head = document.getElementsByTagName('head')[0];
+    var adobe = document.createElement("script");
+    adobe.type = "text/javascript";
+    adobe.src = "//assets.adobedtm.com/60287eadf1ee/c284da483c83/launch-e9ff3acac59f.min.js";
+    head.appendChild(adobe);
+  }
+  </script>
+  <script src='/zh-cn/cloud_volumes/js/jquery.navgoco.min.js'></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src='/zh-cn/cloud_volumes/js/toc.js'></script>
+  <script src='/zh-cn/cloud_volumes/js/customscripts.js'></script>
+
+  <script>
+      $(document).ready(function() {
+          
+          var collapseOnInit = true;
+          
+
+          var navSettings = {
+              "caretHtml": '',
+              "accordion": collapseOnInit,
+              "openClass": 'active', // open
+              "save": false, // leave false or nav highlighting doesn't work right
+              "cookie": {
+                  "name": 'navgoco',
+                  "expires": false,
+                  "path": '/'
+              },
+              "slide": {
+                  "duration": 400,
+                  "easing": 'swing'
+              }
+          };
+
+          // Initialize navgoco with default options
+          $("#mysidebar").navgoco(navSettings);
+          
+
+          $("#collapseAll").click(function(e) {
+              e.preventDefault();
+              $("#mysidebar").navgoco('toggle', false);
+          });
+
+          $("#expandAll").click(function(e) {
+              e.preventDefault();
+              $("#mysidebar").navgoco('toggle', true);
+          });
+
+      });
+
+  </script>
+  <script>
+      $(document).ready(function() {
+          $("#tg-sb-link").click(function() {
+              $("#tg-sb-sidebar").toggle();
+              $("#tg-sb-content").toggleClass('col-md-9');
+              $("#tg-sb-content").toggleClass('col-md-12');
+              $("#tg-sb-icon").toggleClass('fa-toggle-on');
+              $("#tg-sb-icon").toggleClass('fa-toggle-off');
+          });
+      });
+  </script><script async src="https://www.googletagmanager.com/gtag/js?id=UA-81697994-3"></script>
+  <script>
+  if (document.location.hostname === "docs.netapp.com") {
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-81697994-3');
+  }
+  </script>
+  <script src='/zh-cn/cloud_volumes/js/version-dropdown.js'></script>
+  <script src='/zh-cn/cloud_volumes/js/product-family.js'></script>
+  <script src='/zh-cn/cloud_volumes/js/FileSaver.min.js'></script>
+  <script src='/zh-cn/cloud_volumes/js/jszip-utils.min.js'></script>
+  <script src='/zh-cn/cloud_volumes/js/jszip.min.js'></script>
+  <script src='/zh-cn/cloud_volumes/js/pdf-ux.js'></script>
+</head>
+
+
+  <body class role="document">
+    <div id="page" class="n-off-canvas-menu">
+      <div class="n-off-canvas-menu__menu"><!--TODO: Add offcanvas code --></div>
+      <div class="n-off-canvas-menu__content-wrap">
+        <header class="site-header" id="banner">
+  <!-- Start top_hat -->
+  <div class="n-top-hat">
+    <div class="n-container">
+      <div class="n-top-hat__cross-property-nav">
+        <ul class="n-top-hat__list">
+          <li class="n-top-hat__list-item">
+            <a href="https://www.netapp.com/products-a-z/" class="n-top-hat__link">产品和解决方案</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://www.netapp.com/support-and-training/netapp-university/" class="n-top-hat__link">支持和培训</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://cloud.netapp.com" class="n-top-hat__link">云中心</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://community.netapp.com/" class="n-top-hat__link">社区</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://blog.netapp.com/" class="n-top-hat__link">日志</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://customers.netapp.com/en/" class="n-top-hat__link">客户案例</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://www.netapp.com/us/contact-us/index.aspx" target="_self" class="n-top-hat__link" data-ntap-ui="contact-us">联系人</a>
+          </li>
+        </ul>
+      </div>
+      <div class="n-top-hat__utils">
+        <ul class="n-top-hat__list">
+          <li class="n-top-hat__list-item">
+            <a href="https://www.netapp.com/us/contact-us/index.aspx" target="_self" class="n-top-hat__link" data-ntap-ui="contact-us">联系人</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- End top_hat -->
+
+  <!-- Start property bar -->
+  <style>
+    .n-property-navigation-bar__menus--desktop-experience .n-menu--mega__default-content__heading span {
+    color: #34B0FF;
+    }
+  </style>
+  <div class="n-property-bar " data-ntap-ui="sticky-nav">
+    <div class="n-property-bar__inner-wrap">
+      <div class="n-property-bar__menu-toggle">
+        <a href="#" class="n-property-bar__menu-toggle-link">
+          <span class="n-property-bar__menu-toggle-text">Menu</span>
+          <svg class="n-icon-bars n-property-bar__menu-toggle-icon" aria-labelledby="title">
+            <title>bars</title>
+            <use xlink:href="/zh-cn/cloud_volumes/common/svg/sprite.svg#bars"></use>
+          </svg>
+        </a>
+      </div>
+      <div class="n-property-bar__property-mark ">
+        <a href="https://www.netapp.com" class="n-property-bar__property-link">
+          <div class="n-property-bar__logo">
+            <svg class="n-icon-netapp-mark n-icon-netapp-mark n-property-bar__netapp-mark-icon" aria-labelledby="title">
+              <title>netapp-mark</title>
+              <use xlink:href="/zh-cn/cloud_volumes/common/svg/sprite.svg#netapp-mark"></use>
+            </svg>
+            <svg class="n-icon-netapp-logo n-property-bar__logo-svg" aria-labelledby="title">
+              <title>netapp-logo</title>
+              <use xlink:href="/zh-cn/cloud_volumes/common/svg/sprite.svg#netapp-logo"></use>
+            </svg>
+          </div>
+        </a>
+      </div>
+
+      
+      <div class="search-property-bar">
+        <div id="search-demo-container" class="searchbox n-property-bar__search">
+          <div id="react-search" 
+          data-search-html="/zh-cn/cloud_volumes/search.html"
+          data-type="widget" 
+          data-placeholder="搜索文档" 
+          data-no-results-found="未找到与 {query} 匹配的结果。" 
+          data-did-you-mean="搜索 {suggestion}。" 
+          data-no-results-found-did-you-mean="未找到与 {query} 匹配的结果。您是否要搜索 {suggestion}?" 
+          data-results-found="找到 {hitCount} 个结果"  
+          data-sk-es-pf-indexes=""></div>
+          <button class="n-property-bar__search-toggle-button" type="button">
+            <svg class="n-icon-search n-property-bar__search-toggle-button-icon" aria-labelledby="title">
+              <title>search</title>
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/zh-cn/cloud_volumes/common/svg/sprite.svg#search"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  <div class="n-property-bar__toolbar">
+    <!-- Start Language Selector --><div id="ie-i18n" class="n-property-bar__lang-selector">
+      <div id="ie-i18n-menu">
+      <span class="ie-i18n-lang">简体中文</span>
+        <button class="ie-i18n-icon-container" type="button">
+          <svg class="n-globe__icon" aria-labelledby="title">
+            <title>globe</title>
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/zh-cn/cloud_volumes/common/svg/sprite.svg#globe"></use>
+          </svg>
+        </button>
+      </div>
+      <div id="n-property-navigation-bar__menu--language-selector" class="ie-i18n-results-container n-menu n-menu--v3 n-menu--is-active" style="display: none;">
+        <div class="n-language-selector-menu">
+          <ul class="n-menu__list">
+            <li class="n-menu__list-column">
+              <ul class="n-menu__list"><li class="n-menu__list-item n-menu__list-item--level-1">
+                  <a href="https://docs.netapp.com/zh-cn/cloud_volumes/aws/task_activating_support_entitlement.html" class="n-menu__header-text"><span translate="no" class="notranslate">简体中文</span></a>
+                </li><li class="n-menu__list-item n-menu__list-item--level-1">
+                  <a href="https://docs.netapp.com/us-en/cloud_volumes/aws/task_activating_support_entitlement.html" class="n-menu__header-text"><span translate="no" class="notranslate">English</span></a>
+                </li><li class="n-menu__list-item n-menu__list-item--level-1">
+                  <a href="https://docs.netapp.com/ja-jp/cloud_volumes/aws/task_activating_support_entitlement.html" class="n-menu__header-text"><span translate="no" class="notranslate">日本語</span></a>
+                </li></ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div><!-- End Language Selector -->
+
+    <div class="n-property-bar__cta"></div>
+  </div>
+  <script>
+    $(function(){
+        var currentLocalization = $('html').attr('lang');
+
+        var localizationsDictionary = {
+            "en-CA" : "https://www.netapp.com/search/index.aspx?for_cr=canada&",
+            "en-IN" : "https://www.netapp.com/search/index.aspx?for_cr=india&",
+            "nl-NL" : "https://www.netapp.com/search/index.aspx?for_cr=netherlands&",
+            "ru-RU" : "https://www.netapp.com/search/index.aspx?for_cr=russia&",
+            "sv-SE" : "https://www.netapp.com/search/index.aspx?for_cr=sweden&",
+            "it-IT" : "https://www.netapp.com/search/index.aspx?for_cr=italy&",
+            "he-IL" : "https://www.netapp.com/search/index.aspx?for_cr=israel&",
+            "ko-KR" : "https://www.netapp.com/search/index.aspx?for_cr=korea&",
+            "zh-TW" : "https://www.netapp.com/search/index.aspx?for_cr=taiwan&",
+            "en-GB" : "https://www.netapp.com/search/index.aspx?for_cr=unitedkingdom&",
+            "en-SG" : "https://www.netapp.com/search/index.aspx?for_cr=asean&",
+            "en-AU" : "https://www.netapp.com/search/index.aspx?for_cr=australia&",
+            "pt-BR" : "https://www.netapp.com/search/index.aspx?for_cr=brasil&",
+            "de-CH" : "https://www.netapp.com/search/index.aspx?for_cr=switzerland&",
+            "es-MX" : "https://www.netapp.com/search/index.aspx?for_cr=mexico&"
+        };
+
+        if($('html').hasClass('ntap-whitelisted') && localizationsDictionary.hasOwnProperty(currentLocalization)) {
+            $('.n-property-bar__property-link').attr('href', '/');
+        }
+    });
+  </script>
+  <!-- End property bar -->
+</header>
+
+
+        <main id="n-main-content" class="n-main-content">
+          <!-- Start Documentation Content -->
+<div class="ie-main">
+  <!-- Sidebar Column -->
+  
+  <div class="col-md-3" >
+      <div class="n-pdf-header">
+  <a id="toggleButtonPdf" class="n-pdf-button" type="button">
+    <img src="/zh-cn/cloud_volumes/images/pdf.png" width="16" height="16"/>可用的 PDF<span>
+    </span>
+  </a>
+</div>
+<div class="n-pdf-body-container">
+  <ul id="toggleContainerPdf" class="n-pdf-body" style="display:none;"><li class="pdf-ux-container">
+        <a target="_blank" href="/zh-cn/cloud_volumes/pdfs/fullsite-sidebar/Cloud_Volumes_Service_for_AWS_文档.pdf" >
+          <img src="/zh-cn/cloud_volumes/images/pdf.png" width="16" height="16"/>此文档站点的 PDF</a>
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/zh-cn/cloud_volumes/pdfs/sidebar/发行说明.pdf" 
+            
+          >
+            <img src="/zh-cn/cloud_volumes/images/pdf.png" width="16" height="16"/>
+            发行说明
+          </a>
+          
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/zh-cn/cloud_volumes/pdfs/sidebar/入门.pdf" 
+            
+          >
+            <img src="/zh-cn/cloud_volumes/images/pdf.png" width="16" height="16"/>
+            入门
+          </a>
+          
+
+
+
+
+    <ul class="subfolders" style="display:none;"><li class="active pdf-hide">
+  <a target="_blank" href="/zh-cn/cloud_volumes/pdfs/pages/aws/task_activating_support_entitlement.pdf" >
+    <img src="/zh-cn/cloud_volumes/images/pdf.png" width="16" height="16"/>
+    PDF of this page
+  </a>
+</li>
+
+</ul>
+  
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/zh-cn/cloud_volumes/pdfs/sidebar/管理云卷.pdf" 
+            
+          >
+            <img src="/zh-cn/cloud_volumes/images/pdf.png" width="16" height="16"/>
+            管理云卷
+          </a>
+          
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/zh-cn/cloud_volumes/pdfs/sidebar/管理云卷快照.pdf" 
+            
+          >
+            <img src="/zh-cn/cloud_volumes/images/pdf.png" width="16" height="16"/>
+            管理云卷快照
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/zh-cn/cloud_volumes/pdfs/sidebar/管理导出策略规则.pdf" 
+            
+          >
+            <img src="/zh-cn/cloud_volumes/images/pdf.png" width="16" height="16"/>
+            管理导出策略规则
+          </a>
+          
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/zh-cn/cloud_volumes/pdfs/sidebar/管理适用于云卷的_Cloud_Sync.pdf" 
+            
+          >
+            <img src="/zh-cn/cloud_volumes/images/pdf.png" width="16" height="16"/>
+            管理适用于云卷的 Cloud Sync
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/zh-cn/cloud_volumes/pdfs/sidebar/参考.pdf" 
+            
+          >
+            <img src="/zh-cn/cloud_volumes/images/pdf.png" width="16" height="16"/>
+            参考
+          </a>
+          
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+</li></ul>
+  <div class="zip-pdf-link-container" style="display: none;">   
+    <a href="#" id="zipPdf">
+      <img src="/zh-cn/cloud_volumes/images/pdf-zip.png" width="16" height="16"/>
+      <pre>收集单独的 PDF 文档<span class="zip-size"></span></pre>
+    </a><div id="zip-link-popup" class="hide">
+    <div class="inner-modal">
+        <div class="downloading-progress">
+            <div class="spinner"></div>
+            <h1>Creating your file...</h1>
+            <div>This may take a few minutes. Thanks for your patience.</div>
+            <button class="cancel-download-btn" type="button">Cancel</button>
+        </div>
+        <div class="download-complete hide">
+            <div class="done-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"/></svg>
+            </div>
+            <div>Your file is ready</div>
+            <button class="cancel-download-btn" type="button">OK</button>
+        </div>
+    </div>
+</div>
+<script>
+    $(".cancel-download-btn").click(function(){
+        $("#zip-link-popup").addClass("hide");
+        $("#zip-link-popup .downloading-progress").removeClass("hide");
+        $("#zip-link-popup .download-complete").addClass("hide");
+    });
+</script></div>
+</div>
+<script>
+  $("#toggleContainerPdf li.active:last-child").parents('ul.subfolders').toggle('display');
+  $("#toggleButtonPdf").click(function () {
+    $("#toggleContainerPdf").toggle('display');
+    $(".n-pdf-body-container .zip-pdf-link-container").toggle('display');
+  });
+</script><div class="sidebar-nav-container">
+  <ul id="mysidebar" class="nav"><li class=" "><a class="na-navbar-padding" href="/zh-cn/cloud_volumes/aws/index.html">
+        Cloud Volumes Service for AWS 文档
+      </a></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 发行说明</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-cn/cloud_volumes/aws/reference_whats_new_cloud_volumes_aws.html">
+        新增功能
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/cloud_volumes/aws/reference_known_issues.html">
+        已知问题
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 入门</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-cn/cloud_volumes/aws/concept_overview.html">
+        前提条件
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/cloud_volumes/aws/task_quick_start.html">
+        快速入门说明
+      </a></li><li class="  active "><a class="na-navbar-padding" href="/zh-cn/cloud_volumes/aws/task_activating_support_entitlement.html">
+        激活支持授权并访问支持
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/cloud_volumes/aws/task_selecting_region.html">
+        选择区域
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 管理云卷</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-cn/cloud_volumes/aws/task_creating_cloud_volumes_for_aws.html">
+        创建云卷
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/cloud_volumes/aws/task_mounting_cloud_volumes_for_aws.html">
+        挂载云卷
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/cloud_volumes/aws/task_modifying_cloud_volumes_for_aws.html">
+        修改云卷
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/cloud_volumes/aws/task_deleting_cloud_volumes_for_aws.html">
+        删除云卷
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 管理云卷快照</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-cn/cloud_volumes/aws/task_creating_on_demand_snapshots.html">
+        为云卷创建按需快照
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/cloud_volumes/aws/task_creating_modifying_snapshot_policies.html">
+        创建或修改快照策略
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/cloud_volumes/aws/task_disabling_snapshot_policy.html">
+        禁用快照策略
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/cloud_volumes/aws/task_reverting_volume_to_snapshot.html">
+        从快照还原卷
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/cloud_volumes/aws/task_deleting_snapshots.html">
+        删除快照
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/cloud_volumes/aws/task_restoring_snapshots_to_new_volumes.html">
+        将快照还原到新卷
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 管理导出策略规则</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-cn/cloud_volumes/aws/task_modifying_export_policy_rules.html">
+        修改导出策略规则
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/cloud_volumes/aws/task_creating_additional_export_policy_rules.html">
+        创建其他导出策略规则
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/cloud_volumes/aws/task_deleting_export_policy_rules.html">
+        正在删除导出策略规则
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 管理适用于云卷的 Cloud Sync</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-cn/cloud_volumes/aws/task_creating_cloud_sync_data_broker.html">
+        创建 Cloud Sync 数据代理
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/cloud_volumes/aws/task_creating_cloud_sync_relationship.html">
+        创建 Cloud Sync 关系
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/cloud_volumes/aws/task_modifying_cloud_sync_schedule.html">
+        修改 Cloud Sync 计划
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/cloud_volumes/aws/task_deleting_cloud_sync_relationship.html">
+        删除 Cloud Sync 关系
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/cloud_volumes/aws/task_deleting_cloud_sync_data_broker.html">
+        删除 Cloud Sync 数据代理
+      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/cloud_volumes/aws/reference_cloud_volume_apis.html">
+        Cloud Volumes APIs
+      </a></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 参考</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-cn/cloud_volumes/aws/reference_security_groups_windows_ad_servers.html">
+        适用于 Windows AD 服务器的 AWS 安全组设置
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/cloud_volumes/aws/reference_selecting_service_level_and_quota.html">
+        选择适当的服务级别和分配的容量
+      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/cloud_volumes/aws/reference_notices.html">
+        法律声明
+      </a></li></ul>
+</div>
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+
+  </div>
+  
+
+  <div class="ie-content-pane n-doc__component-detail-content n-doc__component-detail-content--show-code">
+    <!-- Begin of page container -->
+    <article class="page-content">
+      <div class="ie-utility">
+  <div class="ie-menu">
+    <div class="n-breadcrumb">
+      <ul class="n-breadcrumb__list">
+        <li class="n-breadcrumb__list-item">
+          <a href="https://www.netapp.com">主页</a>
+        </li>
+        <li class="n-breadcrumb__list-item">
+          <a href="https://docs.netapp.com">文档</a>
+        </li>
+        
+
+        <li class="n-breadcrumb__list-item">
+          <a href="/zh-cn/cloud_volumes/">Cloud&nbsp;Volumes&nbsp;Service</a>
+        </li>
+        <li class="n-breadcrumb__list-item">
+          激活支持授权并访问支持
+        </li>
+      </ul>
+    </div>
+    <div style="clear: both"></div><!-- Main needs to have height -->
+  </div>
+</div>
+
+      <div class="ie-nmt-disclaimer">
+  <span>
+    <div class="ie-nmt-disclaimer-container">
+      <div class="ie-nmt-disclaimer-icon">
+        <svg class="luci-icon" aria-hidden="true">
+          <use xlink:href="/zh-cn/cloud_volumes/common/svg/sprite.svg#circle-info">
+        </svg>
+      </div>
+      <div class="ie-nmt-disclaimer-content">
+        <span> 简体中文版经机器翻译而成，仅供参考。如与英语版出现任何冲突，应以英语版为准。 </span>
+      </div>
+      <div style="clear:both;"></div>
+    </div>
+  </span>
+</div><div class="n-doc__component-detail-heading-wrap">
+  <h1 class="n-doc__component-detail-heading">激活支持授权并访问支持</h1>
+</div>
+
+
+<p class="page-details">
+  
+    
+    <time datetime="2021-09-24 22:41:15 +0000">09/24/2021</time>
+    
+  
+
+<span>提供者
+  <a target="_blank" href="https://github.com/netapp-tonacki">
+    <img  class="avatar avatar-small"
+          alt="netapp-tonacki"
+          width="20" height="20"
+          src="https://avatars.githubusercontent.com/u/38222299?v=4"
+          style="border-radius: 50%;"/>
+  </a>
+  
+  <a target="_blank" href="https://github.com/netapp-juliec">
+    <img  class="avatar avatar-small"
+          alt="netapp-juliec"
+          width="20" height="20"
+          src="https://avatars.githubusercontent.com/u/35970435?v=4"
+          style="border-radius: 50%;"/>
+  </a>
+  
+</span>
+
+
+</p>
+
+
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph lead">
+<p>订阅 AWS Marketplace 后不久即可访问 Cloud Volumes Service 后，强烈建议您激活支持授权。激活支持授权后，您可以通过在线聊天， Web 服务单系统和电话访问技术支持。</p>
+</div>
+<div class="paragraph">
+<p>在序列号激活和注册完成之前，默认支持级别为自助服务。</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="正在激活支持授权">正在激活支持授权</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>在 Cloud Volumes Service for AWS 的初始订阅过程中，您的云卷实例将生成一个 20 位数的 NetApp 序列号，此序列号以 "9y" 开头。NetApp 序列号表示与您的 AWS 帐户关联的 Cloud Volumes Service 订阅。您必须注册 NetApp 序列号才能激活支持授权。我们提供 2 种支持注册选项：</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>使用现有 NetApp 支持站点（ NSS ） SSO 帐户的当前 NetApp 客户</p>
+</li>
+<li>
+<p>新的 NetApp 客户，没有现有的 NetApp 支持站点（ NSS ） SSO 帐户</p>
+</li>
+</ol>
+</div>
+<div class="sect2">
+<h3 id="选项-1-使用现有-netapp-支持站点-nss-sso-帐户的当前-netapp-客户">选项 1 ：使用现有 NetApp 支持站点（ NSS ） SSO 帐户的当前 NetApp 客户</h3>
+<div class="olist arabic">
+<div class="title">步骤</div>
+<ol class="arabic">
+<li>
+<p>导航到 Cloud Volumes Service URL ，或通过访问此服务 <a href="https://cds-aws-bundles.netapp.com/storage/volumes" target="_blank" rel="noopener">"NetApp Cloud Central 门户"</a>。然后使用您的 NetApp Cloud Central 凭据登录。</p>
+</li>
+<li>
+<p>在 Cloud Volumes Service 用户界面（ UI ）中选择 "* 支持 " 以显示您的 NetApp 序列号。</p>
+<div class="imageblock">
+<div class="content">
+<img src="./media/diagram_support_page.png" alt="显示支持页面">
+</div>
+</div>
+</li>
+<li>
+<p>在 "**Support" 页面中，验证您的支持状态是否显示 <code>Not Registered</code> 。</p>
+<div class="imageblock">
+<div class="content">
+<img src="./media/diagram_support_status_not_registered.png" alt="支持状态未注册">
+</div>
+</div>
+<div class="paragraph">
+<p>如果您未看到支持状态和 NetApp 序列号，请刷新浏览器页面。</p>
+</div>
+</li>
+<li>
+<p>单击 "* 激活支持 "* 以注册您的 NetApp 序列号：</p>
+<div class="ulist">
+<ul>
+<li>
+<p>如果您有 NSS 帐户，请在 "* 激活支持 " 页面中输入您的 NSS 凭据（用户名和密码），然后单击 "* 激活 " 以激活您的 NetApp 序列号的支持授权。</p>
+<div class="imageblock">
+<div class="content">
+<img src="./media/diagram_support_activate.png" alt="激活支持">
+</div>
+</div>
+</li>
+<li>
+<p>如果您是现有 NetApp 客户，但没有 NSS SSO 凭据，请转到 <a href="http://now.netapp.com/newuser/">"NetApp 支持注册站点"</a> 以先创建帐户。然后返回此处以向您的 NSS 凭据注册。</p>
+</li>
+<li>
+<p>如果您是 NetApp 的新客户，请参见下面选项 2 的说明。</p>
+</li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>激活 NetApp 序列号后， "**Support" 页面将显示状态 <code>Registered</code> ，表示您已激活支持授权。</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="./media/diagram_support_status_registered.png" alt="已注册支持状态">
+</div>
+</div>
+<div class="paragraph">
+<p>这是对适用 Cloud Volumes Service 序列号的一次性支持注册。任何新的 Cloud Volumes Service 订阅以及后续的新序列号也需要激活支持。如果您对支持注册有任何疑问或问题，请发送电子邮件至 <a href="mailto:cvs-support@netapp.com">cvs-support@netapp.com</a> 与我们联系。</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="选项-2-新的-netapp-客户没有现有的-netapp-支持站点-nss-sso-帐户">选项 2 ：新的 NetApp 客户，没有现有的 NetApp 支持站点（ NSS ） SSO 帐户</h3>
+<div class="olist arabic">
+<div class="title">步骤</div>
+<ol class="arabic">
+<li>
+<p>导航到 <a href="https://register.netapp.com" target="_blank" rel="noopener">"云数据服务支持注册"</a> 页面以创建 NSS 帐户。</p>
+</li>
+<li>
+<p>选择 "我 不是 NetApp 注册客户 "* ，此时将显示 " 新客户注册表 " 。</p>
+<div class="imageblock">
+<div class="content">
+<img src="./media/diagram_support_new_customer_reg.png" alt="新的客户注册表">
+</div>
+</div>
+</li>
+<li>
+<p>在表单上填写所需信息：</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>输入您的姓名和公司信息。</p>
+</li>
+<li>
+<p>选择 "* Cloud Volumes Service WebServices"* 作为产品线，选择 "* WebServices"* 作为云服务提供商。</p>
+</li>
+<li>
+<p>在接下来的两个字段中输入 "NetApp 序列号 " 和 "AWS 客户 ID" （ Cloud Volumes Service ）的 "Support" （支持）页面。</p>
+</li>
+<li>
+<p>单击 "* 提交注册 "* 。</p>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p>您将收到一封来自已提交注册的确认电子邮件。如果未发生错误，系统将重新定向到 " 已成功提交注册 " 页面。您还将在一小时内收到一封电子邮件，指出 " 您的产品现在有资格获得支持 " 。</p>
+</li>
+<li>
+<p>作为 NetApp 的新客户，您还需要创建一个 NetApp 支持站点（ NSS ）用户帐户，以供将来激活支持以及访问支持门户以进行技术支持聊天和 Web 服务单。转至 <a href="http://now.netapp.com/newuser/">"NetApp 支持注册站点"</a> 以执行此任务。您可以提供新注册的 Cloud Volumes Service 序列号以加快此过程。</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>这是对适用 Cloud Volumes Service 序列号的一次性支持注册。任何新的 Cloud Volumes Service 订阅以及后续的新序列号也需要激活支持。如果您对支持注册有任何疑问或问题，请发送电子邮件至 <a href="mailto:cvs-support@netapp.com">cvs-support@netapp.com</a> 与我们联系。</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="获取支持信息">获取支持信息</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>NetApp 通过多种方式为 Cloud Volumes Service 提供支持。全天候提供广泛的免费自助支持选项，例如知识库（ KB ）文章或 NetApp 社区。从 AWS SaaS 市场购买的 Cloud Volumes Service 订阅包括通过聊天，电子邮件， Web 服务单或电话提供的远程技术支持。要使用这些非自助服务支持选项，您必须先为每个 NetApp 序列号激活支持。聊天和 Web 服务单以及案例管理需要使用 NetApp 支持站点（ NSS ） SSO 帐户。</p>
+</div>
+<div class="paragraph">
+<p>通过从主菜单中选择 "**Support" 选项卡，您可以从 Cloud Volumes Service UI 访问支持选项。您可以使用的支持选项取决于您是处于试用模式还是订阅模式。</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="./media/diagram_support_obtain.png" alt="获取支持信息">
+</div>
+</div>
+<div class="sect2">
+<h3 id="自助支持">自助支持</h3>
+<div class="paragraph">
+<p>这些选项在试用模式下可用，并且全天候免费提供：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://kb.netapp.com/">"知识库"</a>选择本节中的链接将转到 NetApp 知识库，您可以在其中搜索与 Cloud Volumes Service 相关的文章，操作说明，常见问题解答或故障修复信息。</p>
+</li>
+<li>
+<p><a href="https://docs.netapp.com/us-en/cloud_volumes/aws/">"用户手册"</a>选择 "* 单击此处 "* 链接将转到 Cloud Volumes Service for AWS 文档中心。</p>
+</li>
+<li>
+<p><a href="http://community.netapp.com/t5/Cloud-Volumes/bd-p/CloudVolumes">"社区"</a>选择 "* 单击此处 "* 链接将转到 Cloud Volumes Service 社区，您可以在此与同行和专家建立联系。</p>
+</li>
+<li>
+<p>通过电子邮件选择 " 反馈 " 部分中的 "* 单击此处 "* 链接将启动一封通过 <a href="mailto:cvs-support@netapp.com">cvs-support@netapp.com</a> 发送给支持部门的电子邮件。这是一个很好的地方，可以询问有关服务的一般问题，提供反馈和建议，或者就与入职相关的问题寻求帮助。</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="订阅支持">订阅支持</h3>
+<div class="paragraph">
+<p>除了上述自助支持选项之外，如果您订阅了 Cloud Volumes Service 付费订阅，则可以与 NetApp 支持工程师合作解决任何问题。</p>
+</div>
+<div class="paragraph">
+<p>激活 Cloud Volumes Service 序列号后，您可以通过以下任一方法访问 NetApp 技术支持资源。要使用这些支持选项，您必须订阅有效的 Cloud Volumes 。</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://mysupport.netapp.com/gchat/cloudvolume">"聊天"</a>此操作也会打开一个支持服务单。</p>
+</li>
+<li>
+<p><a href="https://mysupport.netapp.com/portal?_nfpb=true&amp;_st=initialPage=true&amp;_pageLabel=submitcase">"支持服务单"</a>选择云数据服务 &gt; Cloud Volumes Service AWS</p>
+</li>
+<li>
+<p><a href="https://www.netapp.com/us/contact-us/support.aspx">"电话"</a>用于报告新问题或致电咨询现有服务单。此方法最适合 P1 或即时帮助。</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>您也可以通过单击来申请销售支持 <a href="https://www.netapp.com/us/forms/sales-contact.aspx">"联系销售人员"</a> 链接。</p>
+</div>
+<div class="paragraph">
+<p>您的 Cloud Volumes Service 序列号可通过支持菜单选项显示在服务中。如果您在访问服务时遇到问题，并且先前已向 NetApp 注册序列号，您可以联系 <a href="mailto:cvs-support@netapp.com">cvs-support@netapp.com</a> 以获得帮助。您也可以从 NetApp 支持站点查看 Cloud Volumes Service 序列号列表，如下所示：</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>登录到 <a href="https://mysupport.netapp.com/">"mysupport.netapp.com"</a>。</p>
+</li>
+<li>
+<p>从 "Products" （产品） &gt;"My Products" （我的产品）菜单选项卡中，选择 "Product Family （产品系列） "<strong>*SaaS Cloud Volume" （ SaaS Cloud Volumes"</strong> ）以找到您注册的所有序列号：</p>
+</li>
+</ol>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="./media/diagram_support_list_registered_systems.png" alt="查看已安装系统">
+</div>
+</div>
+</div>
+</div>
+</div>
+
+    </article>
+    <!-- Page Container -->
+  </div>
+
+  
+  <!-- Start Page Toolbar -->
+  <div class="page-nav-toolbar">
+    <div id="version-dropdown"></div>
+    <div class="page-nav-contribute"  >
+      <a target="_blank" href="https://github.com/NetAppDocs/cloud_volumes/issues/new?body=Page%3A%20[激活支持授权并访问支持](https://docs.netapp.com/zh-cn/cloud_volumes/aws/task_activating_support_entitlement.html)" class="page-nav-contribute-link" role="button"><img src="/zh-cn/cloud_volumes/images/discuss-sm.svg" class="github-icon" />请求文档变更</a>
+      <a target="_blank" href="https://github.com/NetAppDocs/cloud_volumes/blob/main/aws/task_activating_support_entitlement.adoc" class="page-nav-contribute-link" role="button"><img src="/zh-cn/cloud_volumes/images/edit-sm.svg" class="github-icon" />在 GitHub 上编辑</a>
+      <a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link"  ><img src="/zh-cn/cloud_volumes/images/article-sm.svg" class="github-icon" />提供者指南</a>
+    </div>
+    <div class="page-nav-container">
+      <nav class="page-nav-fixed">
+        <div class="page-nav-title">在此页面上</div>
+        <div class="page-nav-links">
+          <ul class="page-nav-inner" id="page-menu"></ul>
+        </div>
+      </nav>
+    </div>
+  </div>
+  
+  <div style="clear: both"></div><!-- Main needs to have height -->
+</div>
+
+        </main>
+
+        <footer class="n-footer">
+  <div class="n-footer__bottom">
+    <div class="n-container">
+      <div class="n-footer__bottom-left">
+
+        <div class="n-footer__copyright">
+          <ul class="n-footer__copyright-list">
+            <li class="n-footer__copyright-link">
+            <a href="https://www.netapp.com/us/legal/copyright.aspx">© 2021 NetApp, Inc.</a>
+            </li>
+
+</ul>
+</div>
+<div class="n-footer__social-links">
+<ul class="n-footer__social-link-list">
+<li class="n-footer__social-link-list-item">
+<a class="n-footer__social-link" data-ntap-social="follow-blog" href="https://blog.netapp.com" target="_blank" title="blog" alt="blog">
+<span class="n-footer__social-link-text">blog</span>
+<svg class="n-icon-blog n-footer__social-link-icon" aria-labelledby="title">
+  <title>blog@</title>
+  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/zh-cn/cloud_volumes/common/svg/sprite.svg#blog"></use>
+</svg>
+
+</a>
+</li>
+<li class="n-footer__social-link-list-item">
+<a class="n-footer__social-link" data-ntap-social="follow-community" href="https://community.netapp.com/" target="_blank" title="community" alt="community">
+<span class="n-footer__social-link-text">community</span>
+<svg class="n-icon-community n-footer__social-link-icon" aria-labelledby="title">
+<title>community@</title>
+<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/zh-cn/cloud_volumes/common/svg/sprite.svg#comments"></use>
+</svg>
+
+</a>
+</li>
+<li class="n-footer__social-link-list-item">
+<a class="n-footer__social-link" data-ntap-social="follow-twitter" href="https://twitter.com/netapp" target="_blank" title="twitter" alt="twitter">
+<span class="n-footer__social-link-text">twitter</span>
+<svg class="n-icon-twitter n-footer__social-link-icon" aria-labelledby="title">
+<title>twitter@</title>
+<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/zh-cn/cloud_volumes/common/svg/sprite.svg#twitter"></use>
+</svg>
+
+</a>
+</li>
+<li class="n-footer__social-link-list-item">
+<a class="n-footer__social-link" data-ntap-social="follow-facebook" href="https://www.facebook.com/NetApp" target="_blank" title="facebook" alt="facebook">
+<span class="n-footer__social-link-text">facebook</span>
+<svg class="n-icon-facebook n-footer__social-link-icon" aria-labelledby="title">
+<title>facebook@</title>
+<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/zh-cn/cloud_volumes/common/svg/sprite.svg#facebook"></use>
+</svg>
+
+</a>
+</li>
+<li class="n-footer__social-link-list-item">
+<a class="n-footer__social-link" data-ntap-social="follow-linkedin" href="https://www.linkedin.com/company/netapp" target="_blank" title="linkedin" alt="linkedin">
+<span class="n-footer__social-link-text">linkedin</span>
+<svg class="n-icon-linkedin n-footer__social-link-icon" aria-labelledby="title">
+<title>linkedin@</title>
+<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/zh-cn/cloud_volumes/common/svg/sprite.svg#linkedin"></use>
+</svg>
+
+</a>
+</li>
+<li class="n-footer__social-link-list-item">
+<a class="n-footer__social-link" data-ntap-social="follow-youtube" href="https://www.youtube.com/user/NetAppTV" target="_blank" title="youtube" alt="youtube">
+<span class="n-footer__social-link-text">youtube</span>
+<svg class="n-icon-youtube n-footer__social-link-icon" aria-labelledby="title">
+<title>youtube@</title>
+<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/zh-cn/cloud_volumes/common/svg/sprite.svg#youtube"></use>
+</svg>
+
+</a>
+</li>
+<li class="n-footer__social-link-list-item">
+<a class="n-footer__social-link" data-ntap-social="follow-slideshare" href="https://www.slideshare.net/NetApp" target="_blank" title="slideshare" alt="slideshare">
+<span class="n-footer__social-link-text">slideshare</span>
+<svg class="n-icon-slideshare n-footer__social-link-icon" aria-labelledby="title">
+<title>slideshare@</title>
+<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/zh-cn/cloud_volumes/common/svg/sprite.svg#slideshare"></use>
+</svg>
+
+</a>
+</li>
+</ul>
+</div>
+
+</div>
+<div class="n-footer__bottom-right">
+  <p class="n-footer__fine-print">想就我们的网站提供反馈?<a target="_self" href="javascript:netapp_mailto()" class="n-footer__copyright">请告诉我们</a>
+  <a href="https://docs.netapp.com/zh-cn/announcements/" class="n-footer__copyright">通知</a>
+  </p>
+</div>
+</div>
+</div>
+</footer>
+
+      </div>
+
+      <!-- Elasticsearch JS -->
+      <script type="text/javascript" src='/zh-cn/cloud_volumes/js/bundle.js'></script>
+
+      <!-- Syntax Highlighting -->
+      <script type="text/javascript" src='/zh-cn/cloud_volumes/js/prism.js'></script>
+      <script type="text/javascript" src='/zh-cn/cloud_volumes/js/prism-curl.js'></script>
+    </div>
+    <script>
+      document.body.offsetWidth=1903;
+      cookieLaw = {}
+      cookieLaw.euCountry = "US";
+      cookieLaw.invoke = function(){return false;}
+    </script>
+    <script src='/zh-cn/cloud_volumes/js/www-ntap.js'></script>
+    <script src='/zh-cn/cloud_volumes/js/tabbed-blocks.js'></script>
+  </body>
+
+  
+</html>
