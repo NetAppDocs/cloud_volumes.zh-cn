@@ -23,9 +23,6 @@
 
 .n-breadcrumb__list-item:last-child {
   white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  width: calc(100vw - 48em);
 }
 
 .ie-utility {
@@ -320,7 +317,6 @@ button.n-property-bar__search-toggle-button {
   .n-breadcrumb__list-item:last-child {
     min-height: 19px;
     padding-top: 6px;
-    width: calc(100vw - 1000px);
   }
 }
 @media screen and (max-width: 1100px){
