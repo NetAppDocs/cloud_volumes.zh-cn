@@ -93,7 +93,6 @@
   <block id="05ba930ea1b0e9120679e186909a4c1e" category="inline-link-macro">用于按挂载点获取云卷性能统计信息的脚本</block>
   <block id="ab7093fff7711570f804bcae3b0d7478" category="paragraph"><block ref="ab7093fff7711570f804bcae3b0d7478" category="inline-link-macro-rx"></block></block>
   <block id="77ae50ef3e08c161ce77ba68d707720f" category="summary">NetApp 会定期更新适用于 AWS 的 Cloud Volumes Service ，为您提供新功能和增强功能。</block>
-  <block id="0d0fe9d4502b73205ab12ea52a357e69" category="doc">Cloud Volumes Service for AWS 中的新增功能</block>
   <block id="8aa90565fb34d8b0aeab74ab74ffdf4a" category="section-title">2021年2月</block>
   <block id="3fdf0ec98b1a63c86b4e4dacb0cfa521" category="list-text">现在可以使用新的 Cloud Volumes API （`PerformanceMetrics` ）来检索性能统计信息，包括 IOPS ，带宽和延迟。要了解更多信息，请参见 <block ref="e502fc9fa2f84fd70d41eb87d0259048" category="inline-link-macro-rx"></block>。</block>
   <block id="ca82c7bf0a12e1bd7623c916688916ff" category="section-title">2020 年 7 月</block>
@@ -1075,4 +1074,5 @@
   <block id="ff2741973abb478532d388257d6165e5" category="sidebar">管理适用于云卷的 Cloud Sync</block>
   <block id="63d5049791d9d79d86e9a108b0a999ca" category="sidebar">参考</block>
   <block id="0df28895f8b16f3a9b7b4a540bc2f0ae" category="list-text"><block ref="0df28895f8b16f3a9b7b4a540bc2f0ae" category="inline-link-macro-rx"></block></block>
+  <block id="0674bb07944eeb6425669d4fdbc529c3" category="doc">Cloud Volumes Service for AWS 中的新增功能</block>
 </blocks>
