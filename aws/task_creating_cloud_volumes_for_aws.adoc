@@ -6,6 +6,7 @@ summary: 您可以从 NetApp Cloud Orchestrator 站点创建云卷。
 ---
 = 创建云卷
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

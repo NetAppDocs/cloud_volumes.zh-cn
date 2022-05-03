@@ -7,6 +7,7 @@ summary: 如果要在保留快照策略设置的同时在短时间内停止创�
 = 禁用快照策略
 :toc: macro
 :hardbreaks:
+:allow-uri-read: 
 :toc: 
 :nofooter: 
 :icons: font

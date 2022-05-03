@@ -7,6 +7,7 @@ summary: 通过 Cloud Sync 关系，您可以将数据同步到云卷或从云�
 = 创建 Cloud Sync 关系
 :toc: macro
 :hardbreaks:
+:allow-uri-read: 
 :toc: 
 :nofooter: 
 :icons: font

@@ -7,6 +7,7 @@ summary: 您可以根据需要将快照还原到新卷。
 = 将快照还原到新卷
 :toc: macro
 :hardbreaks:
+:allow-uri-read: 
 :toc: 
 :nofooter: 
 :icons: font

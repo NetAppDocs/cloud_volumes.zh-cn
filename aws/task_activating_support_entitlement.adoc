@@ -6,6 +6,7 @@ summary: 订阅 AWS Marketplace 后不久即可访问 Cloud Volumes Service 后�
 ---
 = 激活支持授权并访问支持
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

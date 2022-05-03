@@ -7,6 +7,7 @@ summary: 云卷易于使用，部署速度快。使用适用于 AWS 的 Cloud Vo
 = Cloud Volumes Service for AWS 前提条件
 :toc: macro
 :hardbreaks:
+:allow-uri-read: 
 :toc: 
 :nofooter: 
 :icons: font

@@ -6,6 +6,7 @@ summary: 您可以从卷或快照页面创建云卷的按需快照。
 ---
 = 为云卷创建按需快照
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

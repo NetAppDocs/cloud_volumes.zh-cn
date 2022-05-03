@@ -7,6 +7,7 @@ summary: Cloud Volumes Service 可在许多 AWS 地区使用。在创建云卷�
 = 选择区域
 :toc: macro
 :hardbreaks:
+:allow-uri-read: 
 :toc: 
 :nofooter: 
 :icons: font

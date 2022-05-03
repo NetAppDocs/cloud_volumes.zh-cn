@@ -7,6 +7,7 @@ summary: Cloud Volumes Service for AWS 存在以下已知问题和限制。
 = 已知问题和限制
 :toc: macro
 :hardbreaks:
+:allow-uri-read: 
 :toc: 
 :nofooter: 
 :icons: font

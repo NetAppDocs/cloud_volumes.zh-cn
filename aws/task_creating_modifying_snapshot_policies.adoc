@@ -7,6 +7,7 @@ summary: 您可以根据需要为云卷创建或修改快照策略。
 = 创建或修改快照策略
 :toc: macro
 :hardbreaks:
+:allow-uri-read: 
 :toc: 
 :nofooter: 
 :icons: font

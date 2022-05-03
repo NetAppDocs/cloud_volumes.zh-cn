@@ -6,6 +6,7 @@ summary: Cloud Volumes Service for AWS 的成本取决于您选择的服务级�
 ---
 = 选择适当的服务级别和分配的容量
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 
@@ -41,7 +42,7 @@ IMPORTANT: _本文 中的所有定价信息均基于截至 2018 年 9 月 12 日
 Cloud Volumes Service for AWS 支持三种服务级别。您可以在创建或修改卷时指定服务级别。
 
 link:task_creating_cloud_volumes_for_aws.html["创建云卷"]
-
+link:task_modifying_cloud_volumes_for_aws.html["修改云卷"]
 
 服务级别可满足不同的存储容量和存储带宽需求：
 
@@ -81,7 +82,7 @@ link:task_creating_cloud_volumes_for_aws.html["创建云卷"]
 您可以在创建或修改卷时为卷指定已分配的容量。
 
 link:task_creating_cloud_volumes_for_aws.html["创建云卷"]
-
+link:task_modifying_cloud_volumes_for_aws.html["修改云卷"]
 
 虽然您需要根据一般的高级业务需求选择服务级别，但您应根据应用程序的特定需求选择分配的容量大小，例如：
 

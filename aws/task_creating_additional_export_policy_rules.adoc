@@ -7,6 +7,7 @@ summary: 您可以创建其他导出策略规则以启用灵活的客户端访�
 = 创建其他导出策略规则
 :toc: macro
 :hardbreaks:
+:allow-uri-read: 
 :toc: 
 :nofooter: 
 :icons: font

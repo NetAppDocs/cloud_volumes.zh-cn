@@ -7,6 +7,7 @@ summary: 您可以将卷从现有快照还原到较早的时间点。
 = 从快照还原卷
 :toc: macro
 :hardbreaks:
+:allow-uri-read: 
 :toc: 
 :nofooter: 
 :icons: font

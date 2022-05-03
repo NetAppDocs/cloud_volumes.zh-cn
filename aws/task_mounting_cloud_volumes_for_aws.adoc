@@ -7,6 +7,7 @@ summary: 您可以将云卷挂载到 AWS 实例。云卷目前支持适用于 Li
 = 挂载云卷
 :toc: macro
 :hardbreaks:
+:allow-uri-read: 
 :toc: 
 :nofooter: 
 :icons: font

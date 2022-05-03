@@ -7,6 +7,7 @@ summary: 首次创建 Cloud Sync 关系时，默认情况下会启用自动同�
 = 修改 Cloud Sync 计划
 :toc: macro
 :hardbreaks:
+:allow-uri-read: 
 :toc: 
 :nofooter: 
 :icons: font

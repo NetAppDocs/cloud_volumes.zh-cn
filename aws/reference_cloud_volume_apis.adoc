@@ -6,6 +6,7 @@ summary: 通过 Web UI 提供的 Cloud Volumes 功能也可通过 RESTful API �
 ---
 = Cloud Volumes APIs
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

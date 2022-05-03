@@ -6,6 +6,7 @@ summary: 您可以使用 Cloud Backup Service 备份 NFS 云卷。
 ---
 = 使用 Cloud Backup Service 管理备份（美国西部 2 的测试版）
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

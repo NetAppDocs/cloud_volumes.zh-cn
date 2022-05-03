@@ -7,6 +7,7 @@ summary: 您可以修改现有卷，包括更改卷名称，已分配容量或�
 = 修改云卷
 :toc: macro
 :hardbreaks:
+:allow-uri-read: 
 :toc: 
 :nofooter: 
 :icons: font

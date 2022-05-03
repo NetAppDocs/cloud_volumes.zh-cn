@@ -6,6 +6,7 @@ summary: 您可以从卷或快照页面中删除快照。
 ---
 = 删除快照
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 
