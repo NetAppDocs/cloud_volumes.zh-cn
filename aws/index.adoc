@@ -50,7 +50,7 @@ Cloud Volumes Service for AWS 具有以下优势：
 
 == 了解适用于 AWS 的 Cloud Volumes Service
 
-video::hL4rosv-iZQ[youtube, width=848,height=480]
+video::hL4rosv-iZQ[youtube,width=848,height=480]
 
 
 == 了解更多信息
