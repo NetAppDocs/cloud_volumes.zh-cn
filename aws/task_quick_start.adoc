@@ -16,22 +16,14 @@ summary: 您可以通过完成几个快速步骤开始使用适用于 AWS 的 Cl
 [role="lead"]
 您可以通过完成几个快速步骤开始使用适用于 AWS 的 Cloud Volumes Service 。
 
-* 注意： * 在创建云卷之前，您必须已配置所需的 AWS 网络组件。请参见 _NetApp Cloud Volumes Service for AWS 帐户设置指南 _ link:media/cvs_aws_account_setup.pdf["[ 中文"^]]|link:media/cvs_aws_account_setup_jaJP.pdf["[ja"^]] 。
 
-[discrete]
-=== 跨度 class="image"><img src="./media/number1.png" al="the number 1"></span> <a href="task_selecing_Region .html"> 选择区域 </A>
+NOTE: 在创建云卷之前、您必须已配置所需的AWS网络组件。请参见 _NetApp Cloud Volumes Service for AWS 帐户设置指南 _ link:media/cvs_aws_account_setup.pdf["[ 中文"^]]|link:media/cvs_aws_account_setup_jaJP.pdf["[ja"^]] 。
 
 [role="quick-margin-para"]
-指定要在其中创建云卷的 AWS 区域。
-
-[discrete]
-=== 跨度 class="image"><img src="./media/number2.png" al="the number 2"></span> <a href="task_creating cloud volumes_for_AWS.html"> 创建云卷 </A>
+link:task_selecting_region.html["指定AWS区域"] 您计划创建云卷的位置。
 
 [role="quick-margin-para"]
-通过指定大小和服务级别在 AWS 云中创建云卷，并定义其他选项。
-
-[discrete]
-=== 跨度 class="image"><img src="./media/number3.png" al="the number 3"></span> <a href="task_mounting cloud volumes_for_AWS.html"> 挂载云卷 </A>
+link:task_creating_cloud_volumes_for_aws.html["创建云卷"] 在AWS云中、指定大小和服务级别、并定义其他选项。
 
 [role="quick-margin-para"]
-使用适用于 Linux 和 UNIX 客户端的 NFS 或适用于 Windows 客户端的 SMB 将云卷挂载到 AWS 实例。
+link:task_mounting_cloud_volumes_for_aws.html["挂载云卷"] 使用NFS for Linux和UNIX客户端或SMB for Windows客户端访问AWS实例。

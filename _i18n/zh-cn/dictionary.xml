@@ -1016,13 +1016,6 @@
   <block id="ded5309ebea6d4cf5ed055e7034efeb8" category="doc">快速入门说明</block>
   <block id="98cd9fd436f3f06a4f633a68293ace22" category="inline-link-macro">[ 中文</block>
   <block id="c4e8dfa1afd29fe4a9774a9a68d87b5f" category="inline-link-macro">[ja</block>
-  <block id="5ac3e76d06eb5d3e2a8eb1e2a93d6020" category="paragraph">* 注意： * 在创建云卷之前，您必须已配置所需的 AWS 网络组件。请参见 _NetApp Cloud Volumes Service for AWS 帐户设置指南 _ <block ref="ea1749da35be089b2ed08e644f3246da" category="inline-link-macro-rx"></block>]|<block ref="4b61c911928703a63f9e7f084d89a163" category="inline-link-macro-rx"></block>] 。</block>
-  <block id="e07d1c8552b02a9af8096c445a1f98f0" category="floating-title">跨度 class="image"&gt;&lt;img src="./media/number1.png" al="the number 1"&gt;&lt;/span&gt; &lt;a href="task_selecing_Region .html"&gt; 选择区域 &lt;/A&gt;</block>
-  <block id="348eb763eb8d49a86500b8ed6b6f30cb" category="paragraph">指定要在其中创建云卷的 AWS 区域。</block>
-  <block id="89eb2085607ad7d0a08819a56cfd9b5c" category="floating-title">跨度 class="image"&gt;&lt;img src="./media/number2.png" al="the number 2"&gt;&lt;/span&gt; &lt;a href="task_creating cloud volumes_for_AWS.html"&gt; 创建云卷 &lt;/A&gt;</block>
-  <block id="c159d360fd7e6de751d0c82932215e11" category="paragraph">通过指定大小和服务级别在 AWS 云中创建云卷，并定义其他选项。</block>
-  <block id="9052c494a743afff74600701fd6f6b27" category="floating-title">跨度 class="image"&gt;&lt;img src="./media/number3.png" al="the number 3"&gt;&lt;/span&gt; &lt;a href="task_mounting cloud volumes_for_AWS.html"&gt; 挂载云卷 &lt;/A&gt;</block>
-  <block id="5374594906015b13962ce3076af203a6" category="paragraph">使用适用于 Linux 和 UNIX 客户端的 NFS 或适用于 Windows 客户端的 SMB 将云卷挂载到 AWS 实例。</block>
   <block id="f44080b03577203d6c764d413f5ed1ea" category="summary">您可以删除不再需要的 Cloud Sync 关系。</block>
   <block id="83b9a291807c68f75e73e458476c8ab3" category="doc">删除 Cloud Sync 关系</block>
   <block id="78868aa9d3e48d0f5ae3596c531f2e0a" category="list-text">单击要删除的关系对应的框，单击 * 操作 * ，然后选择 * 删除关系 / 秒 * 。</block>
@@ -1075,4 +1068,11 @@
   <block id="63d5049791d9d79d86e9a108b0a999ca" category="sidebar">参考</block>
   <block id="0df28895f8b16f3a9b7b4a540bc2f0ae" category="list-text"><block ref="0df28895f8b16f3a9b7b4a540bc2f0ae" category="inline-link-macro-rx"></block></block>
   <block id="0674bb07944eeb6425669d4fdbc529c3" category="doc">Cloud Volumes Service for AWS 中的新增功能</block>
+  <block id="0d7e1f20e5c1a1d1b089eb22a501e24d" category="admonition">在创建云卷之前、您必须已配置所需的AWS网络组件。请参见 _NetApp Cloud Volumes Service for AWS 帐户设置指南 _ <block ref="ea1749da35be089b2ed08e644f3246da" category="inline-link-macro-rx"></block>]|<block ref="4b61c911928703a63f9e7f084d89a163" category="inline-link-macro-rx"></block>] 。</block>
+  <block id="01199f4c47580c34b874ddd6aaa68017" category="inline-link-macro">指定AWS区域</block>
+  <block id="971ac4441ccd02861a64a26dbad2b341" category="paragraph"><block ref="04212880faf5c32b2ea14bdddee21214" category="inline-link-macro-rx"></block> 您计划创建云卷的位置。</block>
+  <block id="124ba7827fa08390f114599668ce5989" category="inline-link-macro">创建云卷</block>
+  <block id="775f4090b28ee5c5fff7d4ef36c48dc0" category="paragraph"><block ref="346d247920cee7e3b2b4a7c0b02ac86d" category="inline-link-macro-rx"></block> 在AWS云中、指定大小和服务级别、并定义其他选项。</block>
+  <block id="f8a3e524010ba486ee8e4709993867f3" category="inline-link-macro">挂载云卷</block>
+  <block id="65875f2f3f86bab85d300291adbab854" category="paragraph"><block ref="60fd149f49a02e7cb34ff55ec3ced595" category="inline-link-macro-rx"></block> 使用NFS for Linux和UNIX客户端或SMB for Windows客户端访问AWS实例。</block>
 </blocks>
