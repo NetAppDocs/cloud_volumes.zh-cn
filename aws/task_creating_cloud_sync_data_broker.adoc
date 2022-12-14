@@ -19,6 +19,7 @@ summary: NetApp Cloud Sync 与 NetApp Cloud Volumes Service for AWS 集成，可
 [role="lead"]
 NetApp Cloud Sync 与 NetApp Cloud Volumes Service for AWS 集成，可通过 NFS 与云卷快速同步数据。通过 Cloud Sync 数据代理，您可以创建 Cloud Sync 关系以同步数据。
 
+.关于此任务
 如果您已在用于 Cloud Volumes 帐户的同一 AWS 虚拟私有云（ VPC ）中有 Cloud Sync 数据代理，则可以跳过此任务。
 
 https://docs.netapp.com/us-en/cloudsync/["NetApp Cloud Sync 文档"^]
@@ -74,4 +75,5 @@ image::diagram_creating_cloud_sync_data_broker.png[创建 Cloud Sync 数据代�
 
 
 
+.完成后
 继续 link:task_creating_cloud_sync_relationship.html["创建 Cloud Sync 关系"]。

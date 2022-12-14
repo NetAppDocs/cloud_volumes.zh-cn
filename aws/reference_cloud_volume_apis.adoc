@@ -65,7 +65,7 @@ API 按功能列出，例如：
 
 == 使用 Cloud Volumes API
 
-本节介绍如何使用 Cloud Volumes API 。这些示例使用 Linux bash shell 中的 curl 。您需要将 ` <api_url>` ， ` <api_key>` 和 ` <secret_key>` 替换为您从记录的值 ,查找 API URL ， API 密钥和机密密钥。
+本节介绍如何使用 Cloud Volumes API 。这些示例使用 Linux bash shell 中的 curl 。您需要将 ` <api_url>` ， ` <api_key>` 和 ` <secret_key>` 替换为您从记录的值 <<finding_urL_key_secretKey,查找 API URL ， API 密钥和机密密钥>>。
 
 
 

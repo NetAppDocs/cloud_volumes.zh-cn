@@ -33,6 +33,7 @@ link:task_creating_additional_export_policy_rules.html["创建其他导出策略
 
 
 
+.关于此任务
 与 Cloud Volumes Service 集成的 Cloud Sync 功能当前仅支持 NFSv3 。如果要在 SMB 卷之间同步，请使用 https://cloudsync.netapp.com["Cloud Sync 服务"^] 直接（ cloudsync.netapp.com ）。
 
 .步骤

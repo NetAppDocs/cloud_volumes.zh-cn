@@ -200,4 +200,5 @@ image:diagram_create_volume_interfaces_dialog.png["接受虚拟接口对话框"]
 
 
 
+.完成后
 继续 link:task_mounting_cloud_volumes_for_aws.html["挂载云卷"]。

@@ -19,10 +19,12 @@ summary: 您可以删除不再需要的 Cloud Sync 数据代理。
 [role="lead"]
 您可以删除不再需要的 Cloud Sync 数据代理。
 
+.关于此任务
 此任务会从云卷中删除数据代理，但不会删除 AWS 中的数据代理实例。
 
 要删除 AWS 中的数据代理实例，您必须转到帐户的 AWS 控制台，按名称找到代理的 EC2 实例，然后根据需要终止该实例。
 
+.开始之前
 必须先删除使用数据代理的所有 Cloud Sync 关系，然后才能删除数据代理。
 
 link:task_deleting_cloud_sync_relationship.html["删除 Cloud Sync 关系"]
